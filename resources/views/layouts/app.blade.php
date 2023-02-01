@@ -16,11 +16,24 @@
 
     <body id="home-version-1" class="home-version-1" data-style="default">
         <div id="site">
-            @include('parts.navbar')
-            <!-- --- -->
-            @yield('content')
-            <!-- --- -->
-            @include('parts.footer')
+            <div class="col py-0">
+                <div class="d-block">@include('parts.navbar')</div>
+            </div>
+            <div class="d-flex">
+                <div class="col-auto col-lg-2 col-md-0">
+                    @include('parts.sidebar')
+                </div>
+                <div class="col py-0">
+                    <div class="d-block">
+                        <!-- --- -->
+                        @yield('content')
+                        <!-- --- -->
+                        <div class="footer-content">
+                            @include('parts.footer')
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
 
         @include('parts.script')

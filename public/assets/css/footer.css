@@ -1,4 +1,12 @@
-#Footer h1 {
-  size: 80px;
-  color: green;
+.footer-content {
+  padding: 0 1rem;
+}
+@media screen and (max-width: 992px) {
+  .footer-content {
+    padding: 0 1rem !important;
+  }
+}
+
+.section-footer {
+  padding: auto;
 }/*# sourceMappingURL=footer.css.map */
