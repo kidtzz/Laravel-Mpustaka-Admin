@@ -10,16 +10,22 @@
                         id="menu"
                     >
                         <li class="nav-item">
-                            <a href="#" class="nav-link align-middle px-0">
-                                <i class="fs-4 bi-house"></i>
+                            <a
+                                href="{{ route('dashboard') }}"
+                                class="nav-link align-middle px-0"
+                            >
+                                <i class="fs-4 bi-grid icons-center"></i>
                                 <span class="ms-1 d-none d-sm-inline"
                                     >Dashboard</span
                                 >
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link align-middle px-0">
-                                <i class="fs-4 bi-house"></i>
+                            <a
+                                href="{{ route('buku') }}"
+                                class="nav-link align-middle px-0"
+                            >
+                                <i class="fs-4 bi-book icons-center"></i>
                                 <span class="ms-1 d-none d-sm-inline"
                                     >Data Buku</span
                                 >
@@ -31,7 +37,7 @@
                                 data-bs-toggle="collapse"
                                 class="nav-link px-0 align-middle"
                             >
-                                <i class="fs-4 bi-grid"></i>
+                                <i class="fs-4 bi-0-circle icons-center"></i>
                                 <span class="ms-1 d-none d-sm-inline"
                                     >Products</span
                                 >

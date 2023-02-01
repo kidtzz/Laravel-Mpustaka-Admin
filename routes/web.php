@@ -1,7 +1,7 @@
 <?php
 
-use App\Http\Controllers\Frontend\DetailController;
-use App\Http\Controllers\Frontend\HomeController;
+use App\Http\Controllers\Frontend\BukuController;
+use App\Http\Controllers\Frontend\DashboardController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -16,5 +16,10 @@ use Illuminate\Support\Facades\Route;
 */
 
 
-Route::get('/', [HomeController::class, 'index'])->name('home');
-Route::get('/detail', [DetailController::class, 'index'])->name('detail');
+
+Route::get('/', [DashboardController::class, 'index'])->name('dashboard');
+Route::get('/buku',[BukuController::class, 'index'])->name('buku');
+
+//php artisan config:cache
+//php artisan cache:clear
+//php artisan route:cache

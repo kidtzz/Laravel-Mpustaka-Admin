@@ -1,6 +1,6 @@
 <!-- <div>
     <h2>ini Navbar yGY</h2>
-    <a rel="stylesheet" href="{{ route('detail') }}">test Detail</a>
+    <a rel="stylesheet" href="">test Detail</a>
 </div> -->
 
 <nav class="navbar navbar-expand-lg bg-white">

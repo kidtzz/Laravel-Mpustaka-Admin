@@ -14,4 +14,9 @@ body .border-radius-03rem {
   -moz-border-radius: calc(0.375rem - 1px);
   -ms-border-radius: calc(0.375rem - 1px);
   -o-border-radius: calc(0.375rem - 1px);
+}
+body .icons-center {
+  position: relative;
+  top: 5px;
+  vertical-align: middle;
 }/*# sourceMappingURL=utilities.css.map */
