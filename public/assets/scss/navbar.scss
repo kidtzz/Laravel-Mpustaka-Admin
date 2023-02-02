@@ -8,6 +8,9 @@
     a {
         color: black;
     }
+    .nav-pills .show > .nav-link {
+        background-color: white !important;
+    }
 }
 .navbar {
     box-shadow: 0 0 15px rgba(0 0 0 / 7%);
