@@ -12,9 +12,9 @@
                             <div class="row">
                                 <div class="col-lg-3 mb-2">
                                     <div
-                                        class="bg-white box-shadow-grey border-radius-03rem py-4"
+                                        class="bg-white box-shadow-grey border-radius-03rem py-4 px-3"
                                     >
-                                        test1
+                                        <span>Total {{ $countBuku }} Buku</span>
                                     </div>
                                 </div>
                                 <div class="col-lg-3 mb-2">

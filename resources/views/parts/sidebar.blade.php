@@ -13,17 +13,18 @@
                         <i
                             class="bi bi-grid bi icons-center icons-size-1rem"
                         ></i
-                        ><span class="d-none d-sm-inline text-top px-2"
+                        ><span class="d-none d-sm-inline text-top-5px px-2"
                             >Dashboard</span
                         >
                     </a>
                 </li>
+
                 <li class="nav-item py-1 w-100">
                     <a class="nav-link px-3 w-100" href="{{ route('buku') }}">
                         <i
                             class="bi bi-book bi icons-center icons-size-1rem"
                         ></i>
-                        <span class="d-none d-sm-inline text-top px-2"
+                        <span class="d-none d-sm-inline text-top-5px px-2"
                             >Data Buku</span
                         >
                     </a>
@@ -37,7 +38,7 @@
                         role="button"
                     >
                         <i class="fs-6 bi-0-circle bi icons-center"></i>
-                        <span class="d-none d-sm-inline text-top px-2"
+                        <span class="d-none d-sm-inline text-top-5px px-2"
                             >Products</span
                         >
                     </a>
@@ -48,19 +49,34 @@
                     >
                         <li class="w-100 nav-link nav-link-child">
                             <a href="#" class="nav-link px-3 w-100 px-0">
-                                <span class="d-none d-sm-inline text-top px-2"
+                                <span
+                                    class="d-none d-sm-inline text-top-5px px-2"
                                     >Product</span
                                 >
                             </a>
                         </li>
                         <li class="w-100 nav-link nav-link-child">
                             <a href="#" class="nav-link px-3 w-100 px-0">
-                                <span class="d-none d-sm-inline text-top px-2"
+                                <span
+                                    class="d-none d-sm-inline text-top-5px px-2"
                                     >Product</span
                                 >
                             </a>
                         </li>
                     </ul>
+                </li>
+                <li class="nav-item py-1 w-100">
+                    <a
+                        class="nav-link px-3 w-100"
+                        href="{{ route('noted-saja') }}"
+                    >
+                        <i
+                            class="bi bi-grid bi icons-center icons-size-1rem"
+                        ></i
+                        ><span class="d-none d-sm-inline text-top-5px px-2"
+                            >Noted</span
+                        >
+                    </a>
                 </li>
             </ul>
         </div>
