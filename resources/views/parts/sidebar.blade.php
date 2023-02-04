@@ -20,38 +20,30 @@
                 </li>
 
                 <li class="nav-item py-1 w-100">
-                    <a class="nav-link px-3 w-100" href="{{ route('buku') }}">
-                        <i
-                            class="bi bi-book bi icons-center icons-size-1rem"
-                        ></i>
-                        <span class="d-none d-sm-inline text-top-5px px-2"
-                            >Data Buku</span
-                        >
-                    </a>
-                </li>
-
-                <li class="nav-item py-1 w-100">
                     <a
-                        href="#submenu3"
+                        href="#MasterData"
                         data-bs-toggle="collapse"
                         class="nav-link px-3 w-100 px-0 align-middle"
                         role="button"
                     >
                         <i class="fs-6 bi-0-circle bi icons-center"></i>
                         <span class="d-none d-sm-inline text-top-5px px-2"
-                            >Products</span
+                            >Master Data</span
                         >
                     </a>
                     <ul
                         class="collapse nav flex-column ms-1"
-                        id="submenu3"
+                        id="MasterData"
                         data-bs-parent="#menu"
                     >
                         <li class="w-100 nav-link nav-link-child">
-                            <a href="#" class="nav-link px-3 w-100 px-0">
+                            <a
+                                href="{{ route('buku') }}"
+                                class="nav-link px-3 w-100 px-0"
+                            >
                                 <span
                                     class="d-none d-sm-inline text-top-5px px-2"
-                                    >Product</span
+                                    >Data Buku</span
                                 >
                             </a>
                         </li>
@@ -59,7 +51,7 @@
                             <a href="#" class="nav-link px-3 w-100 px-0">
                                 <span
                                     class="d-none d-sm-inline text-top-5px px-2"
-                                    >Product</span
+                                    >Data Anggota</span
                                 >
                             </a>
                         </li>
@@ -67,14 +59,46 @@
                 </li>
                 <li class="nav-item py-1 w-100">
                     <a
-                        class="nav-link px-3 w-100"
-                        href="{{ route('noted-saja') }}"
+                        href="#Transaksi"
+                        data-bs-toggle="collapse"
+                        class="nav-link px-3 w-100 px-0 align-middle"
+                        role="button"
                     >
+                        <i class="fs-6 bi-0-circle bi icons-center"></i>
+                        <span class="d-none d-sm-inline text-top-5px px-2"
+                            >Transaksi</span
+                        >
+                    </a>
+                    <ul
+                        class="collapse nav flex-column ms-1"
+                        id="Transaksi"
+                        data-bs-parent="#menu"
+                    >
+                        <li class="w-100 nav-link nav-link-child">
+                            <a href="#" class="nav-link px-3 w-100 px-0">
+                                <span
+                                    class="d-none d-sm-inline text-top-5px px-2"
+                                    >Peminjam</span
+                                >
+                            </a>
+                        </li>
+                        <li class="w-100 nav-link nav-link-child">
+                            <a href="#" class="nav-link px-3 w-100 px-0">
+                                <span
+                                    class="d-none d-sm-inline text-top-5px px-2"
+                                    >Pengembalian</span
+                                >
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item py-1 w-100">
+                    <a class="nav-link px-3 w-100" href="{{ route('berita') }}">
                         <i
                             class="bi bi-grid bi icons-center icons-size-1rem"
                         ></i
                         ><span class="d-none d-sm-inline text-top-5px px-2"
-                            >Noted</span
+                            >Berita</span
                         >
                     </a>
                 </li>

@@ -33,7 +33,6 @@
                 </div>
             </div>
         </div>
-
-        @include('parts.script') @include('custom-script')
+        @include('parts.script') @include('parts.custom-script')
     </body>
 </html>

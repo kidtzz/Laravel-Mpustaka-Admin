@@ -1,22 +1,22 @@
 @extends('layouts.app')
 <!-- -->
 @section('content')
-<div class="section-buku">
+<div class="section-berita">
     <div class="container-fluid my-4">
-        <h5>Buku /</h5>
+        <h5>Berita /</h5>
         <div class="content bg-white border-radius-1rem py-4 px-3">
             <div class="d-flex justify-content-between">
                 <div>
-                    <h5>List Buku</h5>
+                    <h5>List Berita</h5>
                 </div>
                 <div class="table-top-side d-flex mb-2">
                     <div class="add-data mx-1">
                         <a
                             class="btn btn-success d-flex"
-                            href="{{ route('add-buku') }}"
+                            href="{{ route('add-berita') }}"
                         >
                             <i class="bi bi-plus icons-center"></i>
-                            <span class="text-top-2px">Add Buku</span>
+                            <span class="text-top-2px">Add Berita</span>
                         </a>
                     </div>
                 </div>
@@ -26,28 +26,28 @@
                     <tr>
                         <th scope="col">No</th>
                         <th scope="col">judul</th>
-                        <th scope="col">pengarang</th>
-                        <th scope="col">tahunterbit</th>
-                        <th scope="col">jumlah Halaman</th>
-                        <th scope="col">Action</th>
+                        <th scope="col">kategori</th>
+                        <th scope="col">user</th>
+                        <th scope="col">deskripsi</th>
+                        <th scope="col">action</th>
                     </tr>
                 </thead>
                 <tbody>
-                    @php $no = 1; @endphp @foreach ($bukuItem as $item)
+                    @php $no = 1; @endphp @foreach ($dataBerita as $item)
                     <tr>
                         <th scope="row">{{ $no++ }}</th>
                         <th>{{ $item["judul"] }}</th>
-                        <th>{{ $item["pengarang"] }}</th>
-                        <th>{{ $item["tahunTerbit"] }}</th>
-                        <th>{{ $item["jmlhHalaman"] }}</th>
+                        <th>{{ $item["kategori"] }}</th>
+                        <th>{{ $item["user"] }}</th>
+                        <th>{{ $item["deskripsi"] }}</th>
                         <th>
                             <div class="d-flex">
                                 <a
                                     type="button"
                                     class="mx-1 text-success"
                                     data-bs-toggle="tooltip"
+                                    href="getid-berita/{{ $item->id}}"
                                     title="view"
-                                    href="/getid-buku/{{ $item->id}}"
                                 >
                                     <span
                                         ><i class="bi bi-eye icons-center"></i
@@ -56,7 +56,7 @@
                                 <a
                                     type="button"
                                     class="mx-1"
-                                    href="/getid-buku/{{ $item->id}}"
+                                    href="getid-berita/{{ $item->id}}"
                                 >
                                     <span
                                         ><i
@@ -117,7 +117,7 @@
                                             <a
                                                 type="button"
                                                 class="btn btn-danger"
-                                                href="/delete-buku/{{ $item->id}}}"
+                                                href="/delete-berita/{{ $item->id}}}"
                                             >
                                                 Yes
                                             </a>
