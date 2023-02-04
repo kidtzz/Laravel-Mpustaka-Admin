@@ -45,6 +45,7 @@
                         <th scope="col">judul</th>
                         <th scope="col">pengarang</th>
                         <th scope="col">tahunterbit</th>
+                        <th scope="col">jumlah Halaman</th>
                         <th scope="col">Action</th>
                     </tr>
                 </thead>
@@ -54,7 +55,8 @@
                         <th scope="row">{{ $no++ }}</th>
                         <th>{{ $item["judul"] }}</th>
                         <th>{{ $item["pengarang"] }}</th>
-                        <th>{{ $item["tahunterbit"] }}</th>
+                        <th>{{ $item["tahunTerbit"] }}</th>
+                        <th>{{ $item["jmlhHalaman"] }}</th>
                         <td>
                             <div class="d-flex">
                                 <a

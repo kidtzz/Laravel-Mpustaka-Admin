@@ -54,12 +54,22 @@
                             />
                         </div>
                         <div class="mb-3">
-                            <label class="form-label">tahunterbit</label>
+                            <label class="form-label">Jumlah Halaman</label>
+                            <input
+                                type="number"
+                                name="pengarang"
+                                class="form-control"
+                                value="{{ $att_buku->jmlhHalaman }}"
+                            />
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label">Tahun Terbit</label>
                             <input
                                 type="date"
                                 name="tahunterbit"
                                 class="form-control"
-                                value="{{ $att_buku->tahunterbit }}"
+                                value="{{ $att_buku->tahunTerbit }}"
                             />
                         </div>
                         <div class="mb-3 d-flex">

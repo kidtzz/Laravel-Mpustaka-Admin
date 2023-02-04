@@ -20,10 +20,8 @@
                 <div class="d-block">@include('parts.navbar')</div>
             </div>
             <div class="d-flex">
-                <div class="col-auto col-lg-2 col-md-0">
-                    @include('parts.sidebar')
-                </div>
-                <div class="col py-0">
+                <div class="col-lg-2 col-md-0">@include('parts.sidebar')</div>
+                <div class="col py-5">
                     <div class="d-block">
                         <!-- --- -->
                         @yield('content')
@@ -36,6 +34,6 @@
             </div>
         </div>
 
-        @include('parts.script')
+        @include('parts.script') @include('custom-script')
     </body>
 </html>

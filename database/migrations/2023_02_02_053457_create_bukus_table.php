@@ -19,8 +19,9 @@ class CreateBukusTable extends Migration
             $table->string('deskripsi',255);
             $table->string('pengarang',255);
             $table->string('penerbit',255);
-            $table->date('tahunterbit');
+            $table->date('tahunTerbit');
             $table->string('gambar',255);
+            $table->integer('jmlhHalaman');
             $table->timestamps();
         });
     }

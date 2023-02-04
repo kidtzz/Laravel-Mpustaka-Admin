@@ -11,7 +11,7 @@ class BukuController extends Controller
 {
     //
     public function index(){
-        $data = buku::select('id','judul','deskripsi','pengarang','penerbit','tahunterbit','gambar')->get();
+        $data = buku::select('id','judul','deskripsi','pengarang','penerbit','tahunTerbit','gambar','jmlhHalaman')->get();
         return view('pages.buku.buku',['bukuItem'=>$data]);
     }
 
@@ -37,8 +37,10 @@ class BukuController extends Controller
             'deskripsi'=> $request->deskripsi,
             'pengarang'=> $request->pengarang,
             'penerbit'=> $request->penerbit,
+            'jmlhHalaman'=> $request->jmlhHalaman,
             'gambar'=> $img,
-            'tahunterbit'=> $request->tahunterbit,
+            'tahunTerbit'=> $request->tahunTerbit,
+        
         ]); 
         return redirect('buku')-> with('message','buku added');
 

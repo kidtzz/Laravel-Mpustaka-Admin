@@ -50,6 +50,14 @@
                                 class="form-control"
                             />
                         </div>
+                        <div class="mb-3">
+                            <label class="form-label">Jumlah Halaman</label>
+                            <input
+                                type="number"
+                                name="jmlhHalaman"
+                                class="form-control"
+                            />
+                        </div>
 
                         <div class="mb-3">
                             <label class="form-label">gambar</label>
@@ -63,10 +71,10 @@
                             @enderror
                         </div>
                         <div class="mb-3">
-                            <label class="form-label">tahunterbit</label>
+                            <label class="form-label">Tahun Terbit</label>
                             <input
                                 type="date"
-                                name="tahunterbit"
+                                name="tahunTerbit"
                                 class="form-control"
                             />
                         </div>

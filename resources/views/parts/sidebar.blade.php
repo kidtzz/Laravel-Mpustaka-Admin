@@ -1,4 +1,4 @@
-<div class="navbar-expand-lg bg-white py-4" id="sidebar-desktop">
+<div class="navbar-expand-lg col-lg-2 bg-white py-4" id="sidebar-desktop">
     <div class="collapse navbar-collapse">
         <div class="container-fluid px-0">
             <ul

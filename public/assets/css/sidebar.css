@@ -2,7 +2,11 @@
   border-top: 0px;
   -webkit-box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.07);
           box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.07);
-  height: 90vh;
+  height: 93vh;
+  top: 3rem;
+  position: fixed;
+  z-index: 1;
+  overflow-x: hidden;
 }
 #sidebar-desktop a {
   color: black !important;
@@ -53,15 +57,10 @@
   height: 0.875rem;
   background-repeat: no-repeat;
   background-size: 0.875rem 0.875rem;
-  margin-left: 1.5rem;
+  margin-left: auto;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   display: inline-block;
-}
-@media screen and (min-width: 1140px) {
-  #sidebar-desktop .nav-link[data-bs-toggle=collapse]:after {
-    margin-left: 5rem;
-  }
 }
 #sidebar-desktop .nav-link[data-bs-toggle=collapse][aria-expanded=true]:after {
   -webkit-transform: rotate(90deg);

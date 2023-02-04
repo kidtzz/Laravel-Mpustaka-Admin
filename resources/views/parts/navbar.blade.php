@@ -3,7 +3,7 @@
     <a rel="stylesheet" href="">test Detail</a>
 </div> -->
 
-<nav class="navbar navbar-expand-lg bg-white">
+<nav class="fixed-top navbar navbar-expand-lg bg-white">
     <div class="container-fluid">
         <a class="navbar-brand" href="#">Mpustka</a>
         <button
