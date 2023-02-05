@@ -5,21 +5,17 @@
                 class="navbar-nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start"
                 id="menu"
             >
-                <li class="nav-item py-1 w-100">
+                <li class="nav-item w-100">
                     <a
                         class="nav-link px-3 w-100"
                         href="{{ route('dashboard') }}"
                     >
-                        <i
-                            class="bi bi-grid bi icons-center icons-size-1rem"
-                        ></i
-                        ><span class="d-none d-sm-inline text-top-5px px-2"
-                            >Dashboard</span
-                        >
+                        <i class="bi bi-grid bi icons-size-1rem"></i
+                        ><span class="d-none d-sm-inline px-2">Dashboard</span>
                     </a>
                 </li>
 
-                <li class="nav-item py-1 w-100">
+                <li class="nav-item w-100">
                     <a
                         href="#MasterData"
                         data-bs-toggle="collapse"
@@ -39,7 +35,7 @@
                         <li class="w-100 nav-link nav-link-child">
                             <a
                                 href="{{ route('buku') }}"
-                                class="nav-link px-3 w-100 px-0"
+                                class="px-3 w-100 px-0"
                             >
                                 <span
                                     class="d-none d-sm-inline text-top-5px px-2"
@@ -48,7 +44,7 @@
                             </a>
                         </li>
                         <li class="w-100 nav-link nav-link-child">
-                            <a href="#" class="nav-link px-3 w-100 px-0">
+                            <a href="#" class="px-3 w-100 px-0">
                                 <span
                                     class="d-none d-sm-inline text-top-5px px-2"
                                     >Data Anggota</span
@@ -57,7 +53,7 @@
                         </li>
                     </ul>
                 </li>
-                <li class="nav-item py-1 w-100">
+                <li class="nav-item w-100">
                     <a
                         href="#Transaksi"
                         data-bs-toggle="collapse"
@@ -75,7 +71,7 @@
                         data-bs-parent="#menu"
                     >
                         <li class="w-100 nav-link nav-link-child">
-                            <a href="#" class="nav-link px-3 w-100 px-0">
+                            <a href="#" class="px-3 w-100 px-0">
                                 <span
                                     class="d-none d-sm-inline text-top-5px px-2"
                                     >Peminjam</span
@@ -83,7 +79,7 @@
                             </a>
                         </li>
                         <li class="w-100 nav-link nav-link-child">
-                            <a href="#" class="nav-link px-3 w-100 px-0">
+                            <a href="#" class="px-3 w-100 px-0">
                                 <span
                                     class="d-none d-sm-inline text-top-5px px-2"
                                     >Pengembalian</span
@@ -92,7 +88,7 @@
                         </li>
                     </ul>
                 </li>
-                <li class="nav-item py-1 w-100">
+                <li class="nav-item w-100">
                     <a class="nav-link px-3 w-100" href="{{ route('berita') }}">
                         <i
                             class="bi bi-grid bi icons-center icons-size-1rem"

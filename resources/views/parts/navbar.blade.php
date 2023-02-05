@@ -1,11 +1,48 @@
-<!-- <div>
-    <h2>ini Navbar yGY</h2>
-    <a rel="stylesheet" href="">test Detail</a>
-</div> -->
-
 <nav class="fixed-top navbar navbar-expand-lg bg-white">
     <div class="container-fluid">
         <a class="navbar-brand" href="#">Mpustka</a>
+
+        <ul class="navbar-nav">
+            <li class="nav-item me-3 me-lg-0 dropdown">
+                <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    id="navbarDropdown"
+                    role="button"
+                    data-mdb-toggle="dropdown"
+                    aria-expanded="false"
+                >
+                    <img
+                        width="28"
+                        height="28"
+                        src="https://cdn-icons-png.flaticon.com/512/219/219983.png"
+                        alt=""
+                    />
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li>
+                        <a class="dropdown-item" href="#">
+                            Hi, {{ Auth::user()->name }}</a
+                        >
+                    </li>
+                    <li>
+                        <a
+                            class="dropdown-item"
+                            href="/setting-profile/{{ Auth::user()->id }}"
+                            >Setting Profil</a
+                        >
+                    </li>
+
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                        <a class="dropdown-item" href="{{ route('logout') }}"
+                            >Logout</a
+                        >
+                    </li>
+                </ul>
+            </li>
+        </ul>
+
         <button
             class="navbar-toggler"
             type="button"
@@ -71,14 +108,14 @@
                             data-bs-parent="#menu"
                         >
                             <li class="w-100 nav-link nav-link-child">
-                                <a href="#" class="nav-link px-3 w-100 px-0">
+                                <a href="#" class="px-3 w-100 px-0">
                                     <span class="d-sm-inline text-top-5px px-2"
                                         >Product</span
                                     >
                                 </a>
                             </li>
                             <li class="w-100 nav-link nav-link-child">
-                                <a href="#" class="nav-link px-3 w-100 px-0">
+                                <a href="#" class="px-3 w-100 px-0">
                                     <span class="d-sm-inline text-top-5px px-2"
                                         >Product</span
                                     >

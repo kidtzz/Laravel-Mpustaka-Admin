@@ -9,6 +9,9 @@
 #navbarNav-mobile .nav-pills .show > .nav-link {
   background-color: white !important;
 }
+#navbarNav-mobile .nav-link {
+  background: white !important;
+}
 
 .navbar {
   -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.07);

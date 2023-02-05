@@ -3,6 +3,9 @@
 use App\Http\Controllers\Frontend\BeritaController;
 use App\Http\Controllers\Frontend\BukuController;
 use App\Http\Controllers\Frontend\DashboardController;
+use App\Http\Controllers\Frontend\LoginController;
+use App\Http\Controllers\Frontend\SettingProfileController;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -16,8 +19,19 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+//login
+Route::get('/', [LoginController::class, 'index'])->name('login');
+Route::get('/sign-up', [LoginController::class, 'signUp'])->name('sign-up');
+Route::post('/postLogin', [LoginController::class, 'postLogin'])->name('postLogin');
+Route::get('/logout', [LoginController::class, 'logout'])->name('logout');
+Route::post('/register', [LoginController::class, 'register'])->name('register');
 
-Route::get('/', [DashboardController::class, 'index'])->name('dashboard');
+//profil
+Route::get('/setting-profile/{id}', [SettingProfileController::class, 'getProfil'])->name('setting-profile');
+Route::post('/update-profile/{id}', [SettingProfileController::class, 'updateProfil'])->name('update-profile');
+
+//Dashboard
+Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
 Route::get('/noted-saja', [DashboardController::class, 'noted'])->name('noted-saja');
 
 //buku 

@@ -15,8 +15,8 @@
                             class="btn btn-success d-flex"
                             href="{{ route('add-buku') }}"
                         >
-                            <i class="bi bi-plus icons-center"></i>
-                            <span class="text-top-2px">Add Buku</span>
+                            <i class="bi bi-plus"></i>
+                            <span>Add Buku</span>
                         </a>
                     </div>
                 </div>

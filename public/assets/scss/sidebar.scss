@@ -6,11 +6,12 @@
     position: fixed;
     z-index: 1;
     overflow-x: hidden;
+
     a {
         color: black !important;
     }
     .nav-link:hover {
-        background-color: rgba(235, 235, 235, 0.815);
+        background-color: rgba(235, 235, 235, 0.815) !important;
     }
     .bi::before,
     [class="bi-"]::before,
@@ -36,6 +37,7 @@
         display: flex;
         align-items: center;
         position: relative;
+        background: white !important;
         i {
             font-size: 0.875rem;
         }

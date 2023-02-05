@@ -15,8 +15,8 @@
                             class="btn btn-success d-flex"
                             href="{{ route('add-berita') }}"
                         >
-                            <i class="bi bi-plus icons-center"></i>
-                            <span class="text-top-2px">Add Berita</span>
+                            <i class="bi bi-plus"></i>
+                            <span>Add Berita</span>
                         </a>
                     </div>
                 </div>
