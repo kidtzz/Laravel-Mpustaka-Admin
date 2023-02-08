@@ -3,11 +3,11 @@
 @section('content')
 <div class="section-berita">
     <div class="container-fluid my-4">
-        <h5>Add Berita /</h5>
+        <h6>Add Berita /</h6>
         <div class="content bg-white border-radius-1rem py-4 px-3">
             <div class="d-flex justify-content-between">
                 <div>
-                    <h5>Add Berita</h5>
+                    <h6>Add Berita</h6>
                     <form
                         method="post"
                         action="{{ route('simpan-berita') }}"

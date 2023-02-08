@@ -3,11 +3,11 @@
 @section('content')
 <div class="section-buku">
     <div class="container-fluid my-4">
-        <h5>Buku /</h5>
+        <h6>Buku /</h6>
         <div class="content bg-white border-radius-1rem py-4 px-3">
             <div class="d-flex justify-content-between">
                 <div>
-                    <h5>List Buku</h5>
+                    <h6>List Buku</h6>
                 </div>
                 <div class="table-top-side d-flex mb-2">
                     <div class="add-data mx-1">
@@ -25,10 +25,10 @@
                 <thead>
                     <tr>
                         <th scope="col">No</th>
-                        <th scope="col">judul</th>
-                        <th scope="col">pengarang</th>
-                        <th scope="col">tahunterbit</th>
-                        <th scope="col">jumlah Halaman</th>
+                        <th scope="col">Judul</th>
+                        <th scope="col">Pengarang</th>
+                        <th scope="col">Tahun Terbit</th>
+                        <th scope="col">Jumlah Halaman</th>
                         <th scope="col">Action</th>
                     </tr>
                 </thead>

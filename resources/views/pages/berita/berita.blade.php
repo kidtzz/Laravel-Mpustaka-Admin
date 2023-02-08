@@ -25,11 +25,11 @@
                 <thead>
                     <tr>
                         <th scope="col">No</th>
-                        <th scope="col">judul</th>
-                        <th scope="col">kategori</th>
-                        <th scope="col">user</th>
-                        <th scope="col">deskripsi</th>
-                        <th scope="col">action</th>
+                        <th scope="col">Judul</th>
+                        <th scope="col">Kategori</th>
+                        <th scope="col">User</th>
+                        <th scope="col">Deskripsi</th>
+                        <th scope="col">Action</th>
                     </tr>
                 </thead>
                 <tbody>

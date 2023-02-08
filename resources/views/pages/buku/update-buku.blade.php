@@ -3,11 +3,11 @@
 @section('content')
 <div class="section-buku">
     <div class="container-fluid my-4">
-        <h5>Add Buku /</h5>
+        <h6>Add Buku /</h6>
         <div class="content bg-white border-radius-1rem py-4 px-3">
             <div class="d-flex justify-content-between">
                 <div>
-                    <h5>List Buku</h5>
+                    <h6>List Buku</h6>
                     <form
                         action="/update-buku/{{ $att_buku->id}}"
                         method="post"
