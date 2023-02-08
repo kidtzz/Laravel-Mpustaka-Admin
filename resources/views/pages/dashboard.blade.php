@@ -4,7 +4,7 @@
 <div class="section-dashboard">
     <div class="container-fluid border-radius-1rem">
         <div class="content py-4">
-            <h5>Dashoard</h5>
+            <h6>Profil Statistic</h6>
             <div class="row">
                 <div class="col-lg-9 mb-2">
                     <div class="row">
@@ -19,39 +19,39 @@
                                 </div>
                                 <div class="col-lg-3 mb-2">
                                     <div
-                                        class="bg-white box-shadow-grey border-radius-03rem py-4"
+                                        class="bg-white box-shadow-grey border-radius-03rem py-4 px-3"
                                     >
-                                        test2
+                                        Total
                                     </div>
                                 </div>
                                 <div class="col-lg-3 mb-2">
                                     <div
-                                        class="bg-white box-shadow-grey border-radius-03rem py-4"
+                                        class="bg-white box-shadow-grey border-radius-03rem py-4 px-3"
                                     >
-                                        test3
+                                        Total
                                     </div>
                                 </div>
                                 <div class="col-lg-3 mb-2">
                                     <div
-                                        class="bg-white box-shadow-grey border-radius-03rem py-4"
+                                        class="bg-white box-shadow-grey border-radius-03rem py-4 px-3"
                                     >
-                                        test4
+                                        Total
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div class="col-lg-12 mb-2">
                             <div
-                                class="bg-white box-shadow-grey border-radius-03rem py-5"
+                                class="bg-white box-shadow-grey border-radius-03rem py-5 px-3"
                             >
-                                chart atas bawahnya ntar
+                                chart-bot
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-3 mb-2">
                     <div
-                        class="bg-white box-shadow-grey border-radius-03rem py-5"
+                        class="bg-white box-shadow-grey border-radius-03rem py-5 px-3"
                     >
                         side
                     </div>

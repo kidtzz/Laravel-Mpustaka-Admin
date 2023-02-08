@@ -5,7 +5,7 @@
 
 //Note;
 body {
-    background: rgb(235, 235, 235) !important;
+    background: rgba(230, 253, 220, 0.582) !important;
 }
 
 .border-radius-1rem {
@@ -31,7 +31,9 @@ body {
 // .text-top-2px {
 //     padding-top: 2px;
 // }
-
+.text-size-14px {
+    font-size: 14px !important;
+}
 .text-top-5px {
     padding-top: 5px;
 }

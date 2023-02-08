@@ -10,18 +10,14 @@
                         <h5 class="card-title text-center mb-5 fw-light fs-5">
                             Sign Up
                         </h5>
-                        @if(Session::has('message-register'))
-                        <div class="alert alert-success">
-                            {{ Session("message-register") }}
-                        </div>
-                        @endif
+
                         <form
                             action="{{ route('register') }}"
                             method="post"
                             enctype="multipart/form-data"
                         >
                             {{ csrf_field() }}
-                            <div class="form-floating mb-3">
+                            <div class="form-floating mb-4">
                                 <input
                                     type="text"
                                     name="name"
@@ -34,7 +30,7 @@
                                 </div>
                                 @enderror
                             </div>
-                            <!-- <div class="form-floating mb-3">
+                            <!-- <div class="form-floating mb-4">
                                 <input
                                     type="text"
                                     class="form-control"
@@ -42,7 +38,7 @@
                                 />
                                 <label>role </label>
                             </div> -->
-                            <div class="form-floating mb-3">
+                            <div class="form-floating mb-4">
                                 <input
                                     type="email"
                                     name="email"
@@ -55,7 +51,7 @@
                                 </div>
                                 @enderror
                             </div>
-                            <div class="form-floating mb-3">
+                            <div class="form-floating mb-4">
                                 <input
                                     type="password"
                                     name="password"
@@ -69,7 +65,7 @@
                                 @enderror
                             </div>
 
-                            <div class="form-floating mb-3">
+                            <div class="form-floating mb-4">
                                 <input
                                     type="password"
                                     name="password_confirmation"

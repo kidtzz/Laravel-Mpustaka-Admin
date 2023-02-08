@@ -43,6 +43,7 @@ class BukuController extends Controller
             'gambar'=> $img,
             'tahunTerbit'=> $request->tahunTerbit,
         ]); 
+        toastr()->success('Buku Berhasil Ditambahkan');
         return redirect('buku')-> with('message','buku added');
 
     }
@@ -54,12 +55,14 @@ class BukuController extends Controller
     public function updateBuku(Request $request, $id){
         $att_buku = buku::find($id);
         $att_buku->update($request->all());
+        toastr()->warning('Buku Berhasil DiUpdate');
         return redirect('buku')->with('message-update','Data berhasil di Update');
     }
 
     public function deleteBuku($id){
         $data = buku::find($id);
         $data->delete();
+        toastr()->error('Buku Berhasil Didelete');
         return redirect('buku')->with('message-delete','Data berhasil di delete');
     }
 

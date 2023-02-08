@@ -1,5 +1,5 @@
 body {
-  background: rgb(235, 235, 235) !important;
+  background: rgba(230, 253, 220, 0.582) !important;
 }
 
 .border-radius-1rem {
@@ -16,6 +16,10 @@ body {
   -moz-border-radius: calc(0.375rem - 1px);
   -ms-border-radius: calc(0.375rem - 1px);
   -o-border-radius: calc(0.375rem - 1px);
+}
+
+.text-size-14px {
+  font-size: 14px !important;
 }
 
 .text-top-5px {

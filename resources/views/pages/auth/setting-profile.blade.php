@@ -22,7 +22,7 @@
                                 src="{{ asset('storage/'.$user_profil->gambar )}}"
                                 alt=""
                             />
-                            <p>{{ $user_profil->name}}</p>
+                            <p>Hi, {{ $user_profil->name}}</p>
                         </div>
                     </div>
                     <div class="col-lg-4">
@@ -50,16 +50,16 @@
                             />
                         </div>
                         <div class="mb-3">
-                            <label class="form-label">email</label>
+                            <label class="form-label">Email</label>
                             <input
-                                type="email"
+                                type="text"
                                 name="email"
                                 value="{{ $user_profil->email}}"
                                 class="form-control"
                             />
                         </div>
                         <div class="mb-3">
-                            <label class="form-label">daerah</label>
+                            <label class="form-label">Daerah</label>
                             <input
                                 type="text"
                                 name="daerah"
@@ -70,7 +70,7 @@
                     </div>
                     <div class="col-lg-4">
                         <div class="mb-3">
-                            <label class="form-label">gambar</label>
+                            <label class="form-label">Gambar</label>
                             <input
                                 type="file"
                                 name="gambar"
@@ -88,7 +88,7 @@
                             />
                         </div>
                         <div class="mb-3">
-                            <label class="form-label">nomor_phone</label>
+                            <label class="form-label">Nomor Telp</label>
                             <input
                                 type="number"
                                 name="nomor_phone"
@@ -97,7 +97,7 @@
                             />
                         </div>
                         <div class="mb-3">
-                            <label class="form-label">alamat</label>
+                            <label class="form-label">Alamat</label>
                             <input
                                 type="text"
                                 name="alamat"

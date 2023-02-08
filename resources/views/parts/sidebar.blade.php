@@ -22,7 +22,8 @@
                         class="nav-link px-3 w-100 px-0 align-middle"
                         role="button"
                     >
-                        <i class="fs-6 bi-0-circle bi icons-center"></i>
+                        <i class="fs-6 bi-clipboard2-data bi icons-center"></i>
+
                         <span class="d-none d-sm-inline text-top-5px px-2"
                             >Master Data</span
                         >
@@ -60,7 +61,8 @@
                         class="nav-link px-3 w-100 px-0 align-middle"
                         role="button"
                     >
-                        <i class="fs-6 bi-0-circle bi icons-center"></i>
+                        <i class="fs-6 bi-cart-plus bi icons-center"></i>
+
                         <span class="d-none d-sm-inline text-top-5px px-2"
                             >Transaksi</span
                         >

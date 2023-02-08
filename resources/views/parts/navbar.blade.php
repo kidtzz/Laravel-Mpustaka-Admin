@@ -2,7 +2,8 @@
     <div class="container-fluid">
         <a class="navbar-brand" href="#">Mpustka</a>
 
-        <ul class="navbar-nav">
+        <ul class="navbar-nav" id="user-profil">
+            <p class="my-2 text-size-14px">Hi, {{ Auth::user()->name }}</p>
             <li class="nav-item me-3 me-lg-0 dropdown">
                 <a
                     class="nav-link dropdown-toggle"
@@ -13,24 +14,24 @@
                     aria-expanded="false"
                 >
                     <img
-                        width="28"
-                        height="28"
-                        src="https://cdn-icons-png.flaticon.com/512/219/219983.png"
+                        width="30"
+                        height="30"
+                        class="img-fluid rounded-circle shadow-5"
+                        src="http://localhost:8000/storage/{{ Auth::user()->gambar }}"
                         alt=""
                     />
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                     <li>
-                        <a class="dropdown-item" href="#">
-                            Hi, {{ Auth::user()->name }}</a
-                        >
-                    </li>
-                    <li>
                         <a
                             class="dropdown-item"
                             href="/setting-profile/{{ Auth::user()->id }}"
-                            >Setting Profil</a
                         >
+                            Profil</a
+                        >
+                    </li>
+                    <li>
+                        <a class="dropdown-item" href="#"> Setting</a>
                     </li>
 
                     <li><hr class="dropdown-divider" /></li>

@@ -9,10 +9,11 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Validation\Rules\Password;
 
+
 class LoginController extends Controller
 {
     public function index(){
-        
+
         return view('pages.auth.signIn');
     }
     public function signUp(){
@@ -23,7 +24,6 @@ class LoginController extends Controller
         if(Auth::attempt($request->only('email','password'))){
             return redirect('/dashboard');
         }
-
         return redirect('/')->with("message_error_login","username or password salah");
     }
     public function logout(){
@@ -38,7 +38,7 @@ class LoginController extends Controller
             'password'=>['required','confirmed',
             Password::min(8)->letters()->numbers()->mixedcase()]
         ],[
-            'name.required'=>'name tidak boleh kosong',
+            'name.required'=> 'name tidak boleh kosong',
             'email.unique'=>'email sudah ada',
             'password.confirmed'=>'password not match',
             'password.required'=>'password wajib isi gan',
@@ -49,7 +49,10 @@ class LoginController extends Controller
             'email'=> $request->email,
             'password'=> bcrypt($request->password),
         ]);
-       
-        return redirect('sign-up')->with('message-register','Registrasi Berhasil');
+        
+        toastr()->success('Registrasi Berhasil');
+        return redirect('sign-up');
     }
+    
+  
 }

@@ -3,13 +3,13 @@
 @section('content')
 <div class="section-berita">
     <div class="container-fluid my-4">
-        <h5>Berita /</h5>
+        <h6>Berita /</h6>
         <div class="content bg-white border-radius-1rem py-4 px-3">
             <div class="d-flex justify-content-between">
                 <div>
-                    <h5>List Berita</h5>
+                    <h6>List Berita</h6>
                 </div>
-                <div class="table-top-side d-flex mb-2">
+                <div class="table-top-side d-flex mb-3">
                     <div class="add-data mx-1">
                         <a
                             class="btn btn-success d-flex"

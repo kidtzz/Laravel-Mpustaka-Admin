@@ -5,38 +5,43 @@
 // src="{{ asset('storage/'.$att_buku->gambar )}}" 
 // src="storage/{{$att_buku->gambar}}" 
 
+@if(Session::has('message-register'))
+<div class="alert alert-success">
+    {{ Session("message-register") }}
+</div>
+@endif
 
-    public function search(Request $request){
-        if($request->has('search')){    
-            $dataSearch = buku::where('judul','LIKE','%'.$request->search.'%')->paginate(5);
-        }else {
-            $dataSearch = buku::paginate(5);
-        }
-        return view('pages.buku.buku',['bukuItem'=>$dataSearch]);
+public function search(Request $request){
+    if($request->has('search')){    
+        $dataSearch = buku::where('judul','LIKE','%'.$request->search.'%')->paginate(5);
+    }else {
+        $dataSearch = buku::paginate(5);
     }
+    return view('pages.buku.buku',['bukuItem'=>$dataSearch]);
+}
 
 <div class="search-table mx-1">
-                        <div class="input-group mb-3">
-                            <form
-                                action="{{ route('search-buku') }}"
-                                method="get"
-                            >
-                                <input
-                                    type="text"
-                                    name="search"
-                                    id="search"
-                                    class="form-control"
-                                    placeholder="Search..."
-                                />
-                            </form>
+    <div class="input-group mb-3">
+        <form
+            action="{{ route('search-buku') }}"
+            method="get"
+        >
+            <input
+                type="text"
+                name="search"
+                id="search"
+                class="form-control"
+                placeholder="Search..."
+            />
+        </form>
 
-                            <button
-                                class="btn btn-outline-secondary"
-                                type="button"
-                            >
-                                <span
-                                    ><i class="bi bi-search icons-center"></i
-                                ></span>
-                            </button>
-                        </div>
-                    </div> 
+        <button
+            class="btn btn-outline-secondary"
+            type="button"
+        >
+            <span
+                ><i class="bi bi-search icons-center"></i
+            ></span>
+        </button>
+    </div>
+</div> 

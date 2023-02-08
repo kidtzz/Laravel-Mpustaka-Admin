@@ -22,7 +22,7 @@
             <div class="d-flex">
                 <div class="col-lg-2 col-md-0">@include('parts.sidebar')</div>
                 <div class="col py-5">
-                    <div class="d-block">
+                    <div class="d-block py-3">
                         <!-- --- -->
                         @yield('content')
                         <!-- --- -->
