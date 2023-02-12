@@ -32,11 +32,8 @@
                             >
                                 <option selected disabled>---select---</option>
                                 @foreach ($list_nama as $nama)
-                                <option
-                                    value="{{ $nama->first_name }} {{ $nama->last_name }}"
-                                >
-                                    {{ $nama->first_name }}
-                                    {{ $nama->last_name }}
+                                <option value="{{ $nama->name }}">
+                                    {{ $nama->name }}
                                 </option>
                                 @endforeach
                             </select>

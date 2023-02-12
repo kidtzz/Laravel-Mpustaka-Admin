@@ -18,21 +18,10 @@
                             <label class="form-label">name</label>
                             <input
                                 type="text"
-                                name="first_name"
-                                class="form-control @error('first_name') is-invalid @enderror"
+                                name="name"
+                                class="form-control @error('name') is-invalid @enderror"
                             />
-                            @error('first_name')
-                            <div class="invalid-feedback">{{ $message }}</div>
-                            @enderror
-                        </div>
-                        <div class="mb-3">
-                            <label class="form-label">last name</label>
-                            <input
-                                type="text"
-                                name="last_name"
-                                class="form-control @error('last_name') is-invalid @enderror"
-                            />
-                            @error('last_name')
+                            @error('name')
                             <div class="invalid-feedback">{{ $message }}</div>
                             @enderror
                         </div>

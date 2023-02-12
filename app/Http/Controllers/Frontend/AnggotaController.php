@@ -11,7 +11,7 @@ class AnggotaController extends Controller
 {
     //
     public function index(){
-        $data = anggota::select('id','first_name','last_name','email','image','tgl_lahir','nomor_phone','alamat','daerah','jabatan','jenis_kelamin')->get();
+        $data = anggota::select('id','name','email','image','tgl_lahir','nomor_phone','alamat','daerah','jabatan','jenis_kelamin')->get();
         return view('pages.anggota.anggota',['att_anggota'=>$data]);
     }
 
@@ -21,8 +21,7 @@ class AnggotaController extends Controller
 
     public function simpanAnggota(Request $request){
         DB::table('anggota')->insert([
-            'first_name'=> $request->first_name,
-            'last_name'=> $request->last_name,
+            'name'=> $request->name,
             'email'=> $request->email,
             'image'=> $request->image,
             'tgl_lahir'=> $request->tgl_lahir,

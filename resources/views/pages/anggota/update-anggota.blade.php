@@ -18,11 +18,11 @@
                             <label class="form-label">name</label>
                             <input
                                 type="text"
-                                name="first_name"
-                                class="form-control @error('first_name') is-invalid @enderror"
-                                value="{{ $att_anggota->first_name }}"
+                                name="name"
+                                class="form-control @error('name') is-invalid @enderror"
+                                value="{{ $att_anggota->name }}"
                             />
-                            @error('first_name')
+                            @error('name')
                             <div class="invalid-feedback">{{ $message }}</div>
                             @enderror
                         </div>

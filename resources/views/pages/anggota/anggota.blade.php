@@ -25,8 +25,7 @@
                 <thead>
                     <tr>
                         <th scope="col">No</th>
-                        <th scope="col">First Nama</th>
-                        <th scope="col">Last Nama</th>
+                        <th scope="col">Nama</th>
                         <th scope="col">Email</th>
                         <th scope="col">Alamat</th>
                         <th scope="col">Jabatan</th>
@@ -39,8 +38,7 @@
                     @php $no = 1; @endphp @foreach ($att_anggota as $item)
                     <tr>
                         <th scope="row">{{ $no++ }}</th>
-                        <th>{{ $item["first_name"] }}</th>
-                        <th>{{ $item["last_name"] }}</th>
+                        <th>{{ $item["name"] }}</th>
                         <th>{{ $item["email"] }}</th>
                         <th>{{ $item["alamat"] }}</th>
                         <th>{{ $item["jabatan"] }}</th>
