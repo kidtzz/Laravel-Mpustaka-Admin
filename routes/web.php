@@ -1,9 +1,11 @@
 <?php
 
+use App\Http\Controllers\Frontend\AnggotaController;
 use App\Http\Controllers\Frontend\BeritaController;
 use App\Http\Controllers\Frontend\BukuController;
 use App\Http\Controllers\Frontend\DashboardController;
 use App\Http\Controllers\Frontend\LoginController;
+use App\Http\Controllers\Frontend\PeminjamanController;
 use App\Http\Controllers\Frontend\SettingProfileController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
@@ -43,6 +45,15 @@ Route::get('/getid-buku/{id}',[BukuController::class, 'getidBuku'])->name('getid
 Route::post('/update-buku/{id}',[BukuController::class, 'updateBuku'])->name('update-buku');
 Route::get('/search-buku',[BukuController::class, 'search'])->name('search-buku');
 
+//Anggota
+Route::get('/anggota',[AnggotaController::class, 'index'])->name('anggota');
+Route::get('/add-page-anggota',[AnggotaController::class, 'viewAddAnggota'])->name('add-page-anggota');
+Route::post('/simpan-anggota',[AnggotaController::class, 'simpanAnggota'])->name('simpan-anggota');
+Route::get('/delete-anggota/{id}',[AnggotaController::class, 'deleteAnggota'])->name('delete-anggota');
+Route::get('/getid-anggota/{id}',[AnggotaController::class, 'getAnggotaId'])->name('getid-anggota');
+Route::post('/update-anggota/{id}',[AnggotaController::class, 'updateAnggota'])->name('update-anggota');
+
+
 //berita
 Route::get('/berita',[BeritaController::class, 'index'])->name('berita');
 Route::get('/add-berita',[BeritaController::class, 'addBerita'])->name('add-berita');
@@ -50,3 +61,7 @@ Route::post('/simpan-berita',[BeritaController::class, 'storeBerita'])->name('si
 Route::get('/getid-berita/{id}',[BeritaController::class, 'getidBerita'])->name('getid-berita');
 Route::get('/delete-berita/{id}',[BeritaController::class, 'deleteBerita'])->name('delete-berita');
 Route::post('/update-berita/{id}',[BeritaController::class, 'updateBerita'])->name('update-berita');
+
+//transaksi
+Route::get('/add-peminjaman',[PeminjamanController::class,'index'])->name('add-peminjaman');
+Route::post('/simpan-peminjaman',[PeminjamanController::class, 'addPeminjaman'])->name('simpan-peminjaman');

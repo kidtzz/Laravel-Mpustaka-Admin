@@ -13,7 +13,10 @@ class DashboardController extends Controller
     }
     public function index(){
         $countBuku = DB::table('buku')->count();
-        return view("pages.dashboard",compact('countBuku'));
+        $countPeminjam = DB::table('peminjaman')->count();
+        $countAnggota = DB::table('anggota')->count();
+        $countBerita = DB::table('berita')->count();
+        return view("pages.dashboard",compact('countBuku','countPeminjam','countAnggota','countBerita'));
         
         // $countBerita = DB::table('buku')->count();
         // $countPengunjung = DB::table('buku')->count();

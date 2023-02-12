@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Frontend;
 
 use App\Http\Controllers\Controller;
 use App\Models\User;
+use GrahamCampbell\ResultType\Success;
 use Illuminate\Http\Request;
 
 class SettingProfileController extends Controller
@@ -34,6 +35,7 @@ class SettingProfileController extends Controller
         $user->alamat = $request->alamat;
         $user->daerah = $request->daerah;
         $user->save();
+        toastr()->success('Profil berhasil di Update'); 
         return redirect('dashboard')->with('update-profile','Profil berhasil di Update');
     }
 }

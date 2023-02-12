@@ -1,11 +1,11 @@
 
-// php artisan config:cache
-// php artisan cache:clear php
-// artisan route:cache
+ php artisan config:cache
+ php artisan cache:clear
+ php artisan route:cache
 // src="{{ asset('storage/'.$att_buku->gambar )}}" 
 // src="storage/{{$att_buku->gambar}}" 
 
-@if(Session::has('message-register'))
+@if(Session::has('message-register')    )
 <div class="alert alert-success">
     {{ Session("message-register") }}
 </div>

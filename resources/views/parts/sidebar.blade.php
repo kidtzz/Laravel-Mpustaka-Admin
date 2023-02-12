@@ -45,7 +45,10 @@
                             </a>
                         </li>
                         <li class="w-100 nav-link nav-link-child">
-                            <a href="#" class="px-3 w-100 px-0">
+                            <a
+                                href="{{ route('anggota') }}"
+                                class="px-3 w-100 px-0"
+                            >
                                 <span
                                     class="d-none d-sm-inline text-top-5px px-2"
                                     >Data Anggota</span
@@ -73,10 +76,13 @@
                         data-bs-parent="#menu"
                     >
                         <li class="w-100 nav-link nav-link-child">
-                            <a href="#" class="px-3 w-100 px-0">
+                            <a
+                                href="{{ route('add-peminjaman') }}"
+                                class="px-3 w-100 px-0"
+                            >
                                 <span
                                     class="d-none d-sm-inline text-top-5px px-2"
-                                    >Peminjam</span
+                                    >Peminjamaan</span
                                 >
                             </a>
                         </li>

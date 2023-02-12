@@ -21,21 +21,21 @@
                                     <div
                                         class="bg-white box-shadow-grey border-radius-03rem py-4 px-3"
                                     >
-                                        Total
+                                        Total {{ $countPeminjam }} Peminjam
                                     </div>
                                 </div>
                                 <div class="col-lg-3 mb-2">
                                     <div
                                         class="bg-white box-shadow-grey border-radius-03rem py-4 px-3"
                                     >
-                                        Total
+                                        Total {{ $countAnggota }} Member
                                     </div>
                                 </div>
                                 <div class="col-lg-3 mb-2">
                                     <div
                                         class="bg-white box-shadow-grey border-radius-03rem py-4 px-3"
                                     >
-                                        Total
+                                        Total {{ $countBerita }} Berita
                                     </div>
                                 </div>
                             </div>
@@ -53,7 +53,7 @@
                     <div
                         class="bg-white box-shadow-grey border-radius-03rem py-5 px-3"
                     >
-                        side
+                        Side
                     </div>
                 </div>
             </div>

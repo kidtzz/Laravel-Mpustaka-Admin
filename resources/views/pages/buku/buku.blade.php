@@ -117,7 +117,7 @@
                                             <a
                                                 type="button"
                                                 class="btn btn-danger"
-                                                href="/delete-buku/{{ $item->id}}}"
+                                                href="/delete-buku/{{ $item->id}}"
                                             >
                                                 Yes
                                             </a>
