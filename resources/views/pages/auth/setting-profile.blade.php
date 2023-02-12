@@ -27,7 +27,7 @@
                     </div>
                     <div class="col-lg-4">
                         <div class="mb-3">
-                            <label class="form-label">Name</label>
+                            <label class="form-label">Nama</label>
                             <input
                                 type="text"
                                 name="name"
@@ -39,15 +39,6 @@
                                 {{ $message }}
                             </div>
                             @enderror
-                        </div>
-                        <div class="mb-3">
-                            <label class="form-label">Last Name</label>
-                            <input
-                                type="text"
-                                name="last_name"
-                                value="{{ $user_profil->last_name}}"
-                                class="form-control"
-                            />
                         </div>
                         <div class="mb-3">
                             <label class="form-label">Email</label>

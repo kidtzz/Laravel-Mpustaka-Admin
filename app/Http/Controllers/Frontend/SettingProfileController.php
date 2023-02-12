@@ -27,7 +27,6 @@ class SettingProfileController extends Controller
 
         $user = User::where('id', $id)->first();
         $user->name = $request->name;
-        $user->last_name = $request->last_name;
         $user->email = $request->email;
         $user->gambar = $profile;
         $user->tgl_lahir = $request->tgl_lahir;

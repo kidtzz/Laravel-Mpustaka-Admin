@@ -25,6 +25,7 @@
                 <thead>
                     <tr>
                         <th scope="col">No</th>
+                        <th scope="col">Kode Buku</th>
                         <th scope="col">Judul</th>
                         <th scope="col">Pengarang</th>
                         <th scope="col">Tahun Terbit</th>
@@ -36,6 +37,7 @@
                     @php $no = 1; @endphp @foreach ($bukuItem as $item)
                     <tr>
                         <th scope="row">{{ $no++ }}</th>
+                        <th>{{ $item["kode_buku"] }}</th>
                         <th>{{ $item["judul"] }}</th>
                         <th>{{ $item["pengarang"] }}</th>
                         <th>{{ $item["tahunTerbit"] }}</th>

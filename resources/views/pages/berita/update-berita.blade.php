@@ -28,12 +28,13 @@
                         </div>
                         <div class="mb-3">
                             <label class="form-label">deskripsi</label>
-                            <input
+                            <textarea
                                 type="text"
                                 name="deskripsi"
                                 class="form-control"
+                                id="summernote"
                                 value="{{ $att_berita->deskripsi }}"
-                            />
+                            ></textarea>
                         </div>
                         <div class="mb-3">
                             <label class="form-label">kategori</label>

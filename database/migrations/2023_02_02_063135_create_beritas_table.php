@@ -17,7 +17,7 @@ class CreateBeritasTable extends Migration
             $table->id();
             $table->string('judul',255);
             $table->string('kategori',255);
-            $table->string('deskripsi',255);
+            $table->text('deskripsi');
             $table->string('gambar',255);
             $table->string('user',255);
             $table->timestamps();

@@ -33,6 +33,13 @@
     rel="stylesheet"
 />
 
+<!-- summernote -->
+<link
+    href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote-lite.min.css"
+    rel="stylesheet"
+/>
+<!-- end-summernote -->
+
 <link
     rel="stylesheet"
     type="text/css"

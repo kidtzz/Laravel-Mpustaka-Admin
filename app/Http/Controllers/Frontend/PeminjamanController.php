@@ -16,8 +16,10 @@ class PeminjamanController extends Controller
     }
 
     public function addPeminjaman(Request $request){
+        $number = mt_rand(1000, 9999);
+        $kodePinjam = 'PIN'.$number;
         DB::table('peminjaman')->insert([
-            'no_pinjam'=>$request->no_pinjam,
+            'no_pinjam'=>$kodePinjam,
             'nama_pinjam'=>$request->nama_pinjam,
             'judul_buku'=>$request->judul_buku,
             'tanggal_pinjam'=>$request->tanggal_pinjam,

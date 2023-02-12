@@ -13,7 +13,7 @@ class BukuController extends Controller
 {
     //
     public function index(){
-        $data = buku::select('id','judul','deskripsi','pengarang','penerbit','tahunTerbit','gambar','jmlhHalaman')->get(); 
+        $data = buku::select('id','kode_buku','judul','deskripsi','pengarang','penerbit','tahunTerbit','gambar','jmlhHalaman')->get(); 
         return view('pages.buku.buku',['bukuItem'=>$data]);
     }
 
@@ -33,8 +33,10 @@ class BukuController extends Controller
 
         $file_name = $request->gambar->getClientOriginalName();
         $img = $request->gambar->storeAs('thumbnail/buku',$file_name);
-        
+        $number = mt_rand(1000, 9999);
+        $kodeBuku = 'BUK'.$number;
         DB::table('buku')->insert([
+            'kode_buku'=>$kodeBuku,
             'judul'=> $request->judul,
             'deskripsi'=> $request->deskripsi,
             'pengarang'=> $request->pengarang,

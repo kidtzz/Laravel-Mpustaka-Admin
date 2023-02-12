@@ -27,8 +27,7 @@
                         <th scope="col">No</th>
                         <th scope="col">Judul</th>
                         <th scope="col">Kategori</th>
-                        <th scope="col">User</th>
-                        <th scope="col">Deskripsi</th>
+                        <th scope="col">Upload By</th>
                         <th scope="col">Action</th>
                     </tr>
                 </thead>
@@ -39,7 +38,6 @@
                         <th>{{ $item["judul"] }}</th>
                         <th>{{ $item["kategori"] }}</th>
                         <th>{{ $item["user"] }}</th>
-                        <th>{{ $item["deskripsi"] }}</th>
                         <th>
                             <div class="d-flex">
                                 <a

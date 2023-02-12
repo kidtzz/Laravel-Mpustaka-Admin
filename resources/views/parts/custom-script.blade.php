@@ -11,4 +11,10 @@
         }
     }
     windowUser();
+
+    $("#summernote").summernote({
+        placeholder: "Deskripsi",
+        tabsize: 2,
+        height: 150,
+    });
 </script>
