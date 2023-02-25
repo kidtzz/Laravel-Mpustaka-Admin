@@ -20,7 +20,8 @@ class Peminjamaan extends Migration
             $table->string('nama_pinjam')->nullable();
             $table->string('judul_buku')->nullable();
             $table->date('tanggal_pinjam'); 
-            $table->date('tanggal_kembali');   
+            $table->date('tanggal_kembali');
+            $table->string('submit_by');   
             $table->timestamps();
         });
     }

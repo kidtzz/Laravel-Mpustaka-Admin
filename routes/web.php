@@ -65,3 +65,5 @@ Route::post('/update-berita/{id}',[BeritaController::class, 'updateBerita'])->na
 //transaksi
 Route::get('/add-peminjaman',[PeminjamanController::class,'index'])->name('add-peminjaman');
 Route::post('/simpan-peminjaman',[PeminjamanController::class, 'addPeminjaman'])->name('simpan-peminjaman');
+Route::get('/data-peminjam',[PeminjamanController::class,'viewPeminjam'])->name('data-peminjam');
+Route::get('/data-kembali',[PeminjamanController::class,'viewKembali'])->name('data-kembali');

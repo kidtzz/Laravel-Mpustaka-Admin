@@ -41,7 +41,7 @@
                     <label class="form-label">Upload By</label>
                     <input
                         type="text"
-                        name="name"
+                        name="user"
                         class="form-control"
                         value="{{ Auth::user()->name }}"
                         disabled

@@ -4,8 +4,8 @@ namespace App\Http\Controllers\Frontend;
 
 use App\Http\Controllers\Controller;
 use App\Models\berita;
-use App\Models\User;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
 
 class BeritaController extends Controller
@@ -36,7 +36,7 @@ class BeritaController extends Controller
             'deskripsi'=> $request->deskripsi,
             'kategori'=> $request->kategori,
             'gambar'=> $img,
-            'user'=> $request->name,
+            'user'=>  Auth::user()->name,
         
         ]); 
         return redirect('berita')-> with('message','berita added');

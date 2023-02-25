@@ -69,6 +69,12 @@
                         class="form-control @error('tanggal_kembali') is-invalid @enderror"
                     />
                 </div>
+                <input
+                    type="text"
+                    name="submit_by"
+                    value="{{ Auth::user()->name }}"
+                    hidden
+                />
                 <button type="submit" class="btn btn-secondary">Submit</button>
             </form>
         </div>

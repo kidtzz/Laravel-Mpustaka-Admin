@@ -87,7 +87,21 @@
                             </a>
                         </li>
                         <li class="w-100 nav-link nav-link-child">
-                            <a href="#" class="px-3 w-100 px-0">
+                            <a
+                                href="{{ route('data-peminjam') }}"
+                                class="px-3 w-100 px-0"
+                            >
+                                <span
+                                    class="d-none d-sm-inline text-top-5px px-2"
+                                    >Data Peminjam</span
+                                >
+                            </a>
+                        </li>
+                        <li class="w-100 nav-link nav-link-child">
+                            <a
+                                href="{{ route('data-kembali') }}"
+                                class="px-3 w-100 px-0"
+                            >
                                 <span
                                     class="d-none d-sm-inline text-top-5px px-2"
                                     >Pengembalian</span
