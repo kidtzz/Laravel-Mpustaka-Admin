@@ -50,16 +50,15 @@
                             />
                         </div>
                         <div class="mb-3">
-                            <label class="form-label">Daerah</label>
+                            <label class="form-label">Tanggal Lahir</label>
                             <input
-                                type="text"
-                                name="daerah"
-                                value="{{ $user_profil->daerah}}"
+                                type="date"
+                                name="tgl_lahir"
+                                value="{{ $user_profil->tgl_lahir}}"
                                 class="form-control"
                             />
                         </div>
-                    </div>
-                    <div class="col-lg-4">
+
                         <div class="mb-3">
                             <label class="form-label">Gambar</label>
                             <input
@@ -69,12 +68,14 @@
                                 class="form-control"
                             />
                         </div>
+                    </div>
+                    <div class="col-lg-4">
                         <div class="mb-3">
-                            <label class="form-label">Tanggal Lahir</label>
+                            <label class="form-label">Daerah</label>
                             <input
-                                type="date"
-                                name="tgl_lahir"
-                                value="{{ $user_profil->tgl_lahir}}"
+                                type="text"
+                                name="daerah"
+                                value="{{ $user_profil->daerah}}"
                                 class="form-control"
                             />
                         </div>

@@ -20,6 +20,13 @@ class AnggotaController extends Controller
     }
 
     public function simpanAnggota(Request $request){
+        $request->validate([
+            'name'=>'required|min:2',
+            'email'=>'required|string|email|',
+        ],[
+            'name.required'=> 'name tidak boleh kosong',
+        ]);
+
         DB::table('anggota')->insert([
             'name'=> $request->name,
             'email'=> $request->email,

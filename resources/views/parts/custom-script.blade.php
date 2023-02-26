@@ -1,6 +1,9 @@
 <script>
     $(document).ready(function () {
-        $("#TableList ").DataTable();
+        $("#TableList ").DataTable({
+            responsive: true,
+        });
+        new $.fn.dataTable.FixedHeader(table);
     });
 
     function windowUser() {
@@ -15,6 +18,6 @@
     $("#summernote").summernote({
         placeholder: "Deskripsi",
         tabsize: 2,
-        height: 150,
+        height: 300,
     });
 </script>

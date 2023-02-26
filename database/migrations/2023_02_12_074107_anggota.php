@@ -17,7 +17,7 @@ class Anggota extends Migration
         Schema::create('anggota', function (Blueprint $table) {
             $table->id();
             $table->string('name');
-            $table->string('email')->unique();
+            $table->string('email')->nullable();
             $table->string('image')->nullable();
             $table->date('tgl_lahir')->nullable();
             $table->integer('nomor_phone')->nullable();

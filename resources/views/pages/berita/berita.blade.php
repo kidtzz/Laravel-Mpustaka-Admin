@@ -12,11 +12,11 @@
                 <div class="table-top-side d-flex mb-3">
                     <div class="add-data mx-1">
                         <a
-                            class="btn btn-success d-flex"
+                            class="btn btn-success d-flex text-size-14px"
                             href="{{ route('add-berita') }}"
                         >
-                            <i class="bi bi-plus"></i>
-                            <span>Add Berita</span>
+                            <i class="bi bi-plus icons-center"></i>
+                            <span class="text-top-3px">Add Berita</span>
                         </a>
                     </div>
                 </div>

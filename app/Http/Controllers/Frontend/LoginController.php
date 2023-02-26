@@ -53,6 +53,5 @@ class LoginController extends Controller
         toastr()->success('Registrasi Berhasil');
         return redirect('sign-up');
     }
-    
   
 }

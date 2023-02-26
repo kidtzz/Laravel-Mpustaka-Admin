@@ -1,9 +1,11 @@
 <nav class="fixed-top navbar navbar-expand-lg bg-white">
     <div class="container-fluid">
-        <a class="navbar-brand" href="#">Mpustka</a>
+        <a class="navbar-brand" href="{{ route('dashboard') }}">Mpustka</a>
 
         <ul class="navbar-nav" id="user-profil">
-            <p class="my-2 text-size-14px">Hi, {{ Auth::user()->name }}</p>
+            <p class="my-2 text-size-14px text-top-5px">
+                Hi, {{ Auth::user()->name }}
+            </p>
             <li class="nav-item me-3 me-lg-0 dropdown">
                 <a
                     class="nav-link dropdown-toggle"

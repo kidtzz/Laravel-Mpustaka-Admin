@@ -12,30 +12,91 @@
                             <div class="row">
                                 <div class="col-lg-3 mb-2">
                                     <div
-                                        class="bg-white box-shadow-grey border-radius-03rem py-4 px-3"
+                                        class="bg-white box-shadow-grey border-radius-03rem p-1"
                                     >
-                                        <span>Total {{ $countBuku }} Buku</span>
+                                        <div class="row">
+                                            <div class="col-5">
+                                                <i
+                                                    class="fas fa-book fa-3x text-info m-3"
+                                                ></i>
+                                            </div>
+                                            <div
+                                                class="col d-flex align-items-center"
+                                            >
+                                                <span
+                                                    >Total
+                                                    {{ $countBuku }} Buku</span
+                                                >
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="col-lg-3 mb-2">
                                     <div
-                                        class="bg-white box-shadow-grey border-radius-03rem py-4 px-3"
+                                        class="bg-white box-shadow-grey border-radius-03rem p-1"
                                     >
-                                        Total {{ $countPeminjam }} Peminjam
+                                        <div class="row">
+                                            <div class="col-5">
+                                                <i
+                                                    class="fas fa-exchange-alt fa-3x text-warning m-3"
+                                                ></i>
+                                            </div>
+                                            <div
+                                                class="col d-flex align-items-center"
+                                            >
+                                                <span>
+                                                    Total
+                                                    {{ $countPeminjam }}
+                                                    Peminjam
+                                                </span>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
+
                                 <div class="col-lg-3 mb-2">
                                     <div
-                                        class="bg-white box-shadow-grey border-radius-03rem py-4 px-3"
+                                        class="bg-white box-shadow-grey border-radius-03rem p-1"
                                     >
-                                        Total {{ $countAnggota }} Member
+                                        <div class="row">
+                                            <div class="col-5">
+                                                <i
+                                                    class="fas fa-user-friends fa-3x text-success m-3"
+                                                ></i>
+                                            </div>
+                                            <div
+                                                class="col d-flex align-items-center"
+                                            >
+                                                <span>
+                                                    Total
+                                                    {{ $countAnggota }}
+                                                    Member</span
+                                                >
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
+
                                 <div class="col-lg-3 mb-2">
                                     <div
-                                        class="bg-white box-shadow-grey border-radius-03rem py-4 px-3"
+                                        class="bg-white box-shadow-grey border-radius-03rem p-1"
                                     >
-                                        Total {{ $countBerita }} Berita
+                                        <div class="row">
+                                            <div class="col-5">
+                                                <i
+                                                    class="fas fa-newspaper fa-3x text-info m-3"
+                                                ></i>
+                                            </div>
+                                            <div
+                                                class="col d-flex align-items-center"
+                                            >
+                                                <span>
+                                                    Total
+                                                    {{ $countBerita }}
+                                                    Berita</span
+                                                >
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -44,7 +105,7 @@
                             <div
                                 class="bg-white box-shadow-grey border-radius-03rem py-5 px-3"
                             >
-                                chart-bot
+                                Profil Visit
                             </div>
                         </div>
                     </div>

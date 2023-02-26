@@ -7,7 +7,13 @@
         <meta name="csrf-token" content="{{ csrf_token() }}" />
         <meta name="robots" content="noindex,nofollow" />
 
-        <title>Laravel-Modtel</title>
+        <link
+            rel="shortcut icon"
+            type="image/x-icon"
+            href="{{ asset('images/logo_manggala_pustaka_white.ico') }}"
+        />
+
+        <title>M-Pustaka</title>
 
         @include('parts.style')
 

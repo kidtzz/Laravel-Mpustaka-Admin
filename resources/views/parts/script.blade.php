@@ -20,11 +20,15 @@
     crossorigin="anonymous"
     referrerpolicy="no-referrer"
 ></script>
+
 <script
     type="text/javascript"
     charset="utf8"
-    src="https://cdn.datatables.net/1.13.2/js/jquery.dataTables.js"
+    src="https://cdn.datatables.net/1.13.2/js/jquery.dataTables.min.js"
 ></script>
+
+<script src="https://cdn.datatables.net/responsive/2.4.0/js/dataTables.responsive.min.js"></script>
+<script src="https://cdn.datatables.net/1.13.2/js/dataTables.bootstrap5.min.js"></script>
 
 <!-- <script
     src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"

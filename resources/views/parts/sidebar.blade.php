@@ -5,7 +5,7 @@
                 class="navbar-nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start"
                 id="menu"
             >
-                <li class="nav-item w-100">
+                <li class="nav-item w-100 px-3">
                     <a
                         class="nav-link px-3 w-100"
                         href="{{ route('dashboard') }}"
@@ -15,7 +15,7 @@
                     </a>
                 </li>
 
-                <li class="nav-item w-100">
+                <li class="nav-item w-100 px-3">
                     <a
                         href="#MasterData"
                         data-bs-toggle="collapse"
@@ -33,10 +33,10 @@
                         id="MasterData"
                         data-bs-parent="#menu"
                     >
-                        <li class="w-100 nav-link nav-link-child">
+                        <li class="w-100 nav-link-child">
                             <a
                                 href="{{ route('buku') }}"
-                                class="px-3 w-100 px-0"
+                                class="px-3 nav-link px-0"
                             >
                                 <span
                                     class="d-none d-sm-inline text-top-5px px-2"
@@ -44,10 +44,10 @@
                                 >
                             </a>
                         </li>
-                        <li class="w-100 nav-link nav-link-child">
+                        <li class="w-100 nav-link-child">
                             <a
                                 href="{{ route('anggota') }}"
-                                class="px-3 w-100 px-0"
+                                class="px-3 px-0 nav-link"
                             >
                                 <span
                                     class="d-none d-sm-inline text-top-5px px-2"
@@ -57,7 +57,7 @@
                         </li>
                     </ul>
                 </li>
-                <li class="nav-item w-100">
+                <li class="nav-item w-100 px-3">
                     <a
                         href="#Transaksi"
                         data-bs-toggle="collapse"
@@ -75,21 +75,21 @@
                         id="Transaksi"
                         data-bs-parent="#menu"
                     >
-                        <li class="w-100 nav-link nav-link-child">
+                        <li class="w-100 nav-link-child">
                             <a
                                 href="{{ route('add-peminjaman') }}"
-                                class="px-3 w-100 px-0"
+                                class="px-3 nav-link px-0"
                             >
                                 <span
                                     class="d-none d-sm-inline text-top-5px px-2"
-                                    >Peminjamaan</span
+                                    >Add Peminjam</span
                                 >
                             </a>
                         </li>
-                        <li class="w-100 nav-link nav-link-child">
+                        <li class="w-100 nav-link-child">
                             <a
                                 href="{{ route('data-peminjam') }}"
-                                class="px-3 w-100 px-0"
+                                class="px-3 nav-link px-0"
                             >
                                 <span
                                     class="d-none d-sm-inline text-top-5px px-2"
@@ -97,10 +97,10 @@
                                 >
                             </a>
                         </li>
-                        <li class="w-100 nav-link nav-link-child">
+                        <li class="w-100 nav-link-child">
                             <a
                                 href="{{ route('data-kembali') }}"
-                                class="px-3 w-100 px-0"
+                                class="px-3 nav-link px-0"
                             >
                                 <span
                                     class="d-none d-sm-inline text-top-5px px-2"
@@ -110,7 +110,7 @@
                         </li>
                     </ul>
                 </li>
-                <li class="nav-item w-100">
+                <li class="nav-item w-100 px-3">
                     <a class="nav-link px-3 w-100" href="{{ route('berita') }}">
                         <i
                             class="bi bi-grid bi icons-center icons-size-1rem"
