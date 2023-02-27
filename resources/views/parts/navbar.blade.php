@@ -1,6 +1,6 @@
 <nav class="fixed-top navbar navbar-expand-lg bg-white">
     <div class="container-fluid">
-        <a class="navbar-brand" href="{{ route('dashboard') }}">Mpustka</a>
+        <a class="navbar-brand" href="{{ route('dashboard') }}">M-pustaka</a>
 
         <ul class="navbar-nav" id="user-profil">
             <p class="my-2 text-size-14px text-top-5px">

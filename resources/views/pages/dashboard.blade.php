@@ -103,9 +103,9 @@
                         </div>
                         <div class="col-lg-12 mb-2">
                             <div
-                                class="bg-white box-shadow-grey border-radius-03rem py-5 px-3"
+                                class="bg-white box-shadow-grey border-radius-03rem p-1"
                             >
-                                Profil Visit
+                                <div id="container-table"></div>
                             </div>
                         </div>
                     </div>
@@ -121,8 +121,7 @@
         </div>
     </div>
 </div>
-
-@endsection
+@include('parts.custom-dashboard') @endsection
 
 <!-- ini contoh addon-style -->
 <!-- @push('addon-style')

@@ -34,7 +34,6 @@ Route::post('/update-profile/{id}', [SettingProfileController::class, 'updatePro
 
 //Dashboard
 Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
-Route::get('/noted-saja', [DashboardController::class, 'noted'])->name('noted-saja');
 
 //buku 
 Route::get('/buku',[BukuController::class, 'index'])->name('buku');
