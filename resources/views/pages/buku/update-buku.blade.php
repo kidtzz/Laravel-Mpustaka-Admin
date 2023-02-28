@@ -3,7 +3,7 @@
 @section('content')
 <div class="section-buku">
     <div class="container-fluid my-4">
-        <h6>Add Buku /</h6>
+        <h6>Add Buku</h6>
         <div class="content bg-white border-radius-1rem py-4 px-3">
             <h6>List Buku</h6>
             <form

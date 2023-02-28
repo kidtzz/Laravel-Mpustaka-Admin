@@ -3,7 +3,7 @@
 @section('content')
 <div class="section-peminjam">
     <div class="container-fluid my-4">
-        <h6>peminjam /</h6>
+        <h6>Peminjam</h6>
         <div class="content bg-white border-radius-1rem py-4 px-3">
             <div class="d-flex justify-content-between">
                 <div>

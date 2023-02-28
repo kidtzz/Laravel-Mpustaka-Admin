@@ -27,10 +27,13 @@ class AnggotaController extends Controller
             'name.required'=> 'name tidak boleh kosong',
         ]);
 
+        $file_name = $request->image->getClientOriginalName();
+        $anggota = $request->image->storeAs('thumbnail/anggota',$file_name);
+
         DB::table('anggota')->insert([
             'name'=> $request->name,
             'email'=> $request->email,
-            'image'=> $request->image,
+            'image'=> $anggota,
             'tgl_lahir'=> $request->tgl_lahir,
             'nomor_phone'=> $request->nomor_phone,
             'alamat'=> $request->alamat,

@@ -3,7 +3,7 @@
 @section('content')
 <div class="section-kembali">
     <div class="container-fluid my-4">
-        <h6>kembali /</h6>
+        <h6>Pengembalian</h6>
         <div class="content bg-white border-radius-1rem py-4 px-3">
             <div class="d-flex justify-content-between">
                 <div>

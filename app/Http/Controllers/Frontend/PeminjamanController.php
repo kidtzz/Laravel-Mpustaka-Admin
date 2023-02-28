@@ -14,7 +14,7 @@ class PeminjamanController extends Controller
     public function index(){
         $list_nama = DB::table('anggota')->get();
         $list_buku = DB::table('buku')->get();
-        return view('pages.transaksi.peminjaman', compact('list_nama','list_buku'));
+        return view('pages.transaksi.add-peminjam', compact('list_nama','list_buku'));
     }
     public function viewPeminjam(){
         $list_peminjam = peminjaman::select('no_pinjam','nama_pinjam','judul_buku','tanggal_pinjam','tanggal_kembali','submit_by')->get();

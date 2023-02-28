@@ -112,9 +112,30 @@
                 </div>
                 <div class="col-lg-3 mb-2">
                     <div
-                        class="bg-white box-shadow-grey border-radius-03rem py-5 px-3"
+                        class="bg-white box-shadow-grey border-radius-03rem p-3"
                     >
-                        Side
+                        <h6>Berita Terbaru</h6>
+                        <div class="list-group list-group-flush">
+                            @foreach ($list_berita as $item)
+
+                            <a
+                                href="#"
+                                class="list-group-item list-group-item-action"
+                            >
+                                <p class="mb-1">
+                                    {{ Str::limit($item["judul"],40) }}
+                                </p>
+                                <div
+                                    class="d-flex w-100 justify-content-between"
+                                >
+                                    <small class="text-muted">{{
+                                        $item["user"]
+                                    }}</small>
+                                    <small class="text-muted">3 days ago</small>
+                                </div>
+                            </a>
+                            @endforeach
+                        </div>
                     </div>
                 </div>
             </div>

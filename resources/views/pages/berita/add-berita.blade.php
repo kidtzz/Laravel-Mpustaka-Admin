@@ -3,7 +3,7 @@
 @section('content')
 <div class="section-berita">
     <div class="container-fluid my-4">
-        <h6>Add Berita /</h6>
+        <h6>Add Berita</h6>
         <div class="content bg-white border-radius-1rem py-4 px-3">
             <h6>Add Berita</h6>
             <form
@@ -70,7 +70,7 @@
                     </div>
                 </div>
 
-                <button type="submit" class="btn btn-secondary ">Submit</button>
+                <button type="submit" class="btn btn-secondary">Submit</button>
             </form>
         </div>
     </div>

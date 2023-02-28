@@ -3,7 +3,7 @@
 @section('content')
 <div class="section-anggota">
     <div class="container-fluid my-4">
-        <h6>Peminjamaan /</h6>
+        <h6>Peminjamaan</h6>
         <div class="content bg-white border-radius-1rem py-4 px-3">
             <h6>Peminjamaan</h6>
             <form

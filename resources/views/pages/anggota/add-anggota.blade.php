@@ -4,7 +4,7 @@
 
 <div class="section-anggota">
     <div class="container-fluid my-4">
-        <h6>Add anggota /</h6>
+        <h6>Add anggota</h6>
         <div class="content bg-white border-radius-1rem py-4 px-3">
             <h6>List anggota</h6>
 
@@ -74,8 +74,8 @@
                                 <option selected value="no define">
                                     --- select ---
                                 </option>
-                                <option value="0">Laki-Laki</option>
-                                <option value="1">Perempuan</option>
+                                <option value="Laki-Laki">Laki-Laki</option>
+                                <option value="Perempuan">Perempuan</option>
                             </select>
                         </div>
                     </div>
