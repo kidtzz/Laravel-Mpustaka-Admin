@@ -2,6 +2,7 @@
 
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Schema;
 
 class CreateBeritasTable extends Migration
@@ -15,12 +16,13 @@ class CreateBeritasTable extends Migration
     {
         Schema::create('berita', function (Blueprint $table) {
             $table->id();
-            $table->string('judul',255);
-            $table->string('kategori',255);
-            $table->text('deskripsi');
-            $table->string('gambar',255);
-            $table->string('user',255);
-            $table->timestamps();
+            $table->string('judul');
+            $table->string('kategori')->nullable();
+            $table->text('deskripsi')->nullable();
+            $table->string('gambar')->nullable();
+            $table->string('user');
+            $table->timestamp('created_at')->default(DB::raw('CURRENT_TIMESTAMP'));
+            $table->timestamp('updated_at')->default(DB::raw('CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP'));
         });
     }
 

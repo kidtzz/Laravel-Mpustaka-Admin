@@ -41,11 +41,13 @@ class insertDBSedeer extends Seeder
             'name'=>'Admin-'.Str::random(2),
             'email'=>Str::random(5).'@gmail.com',
         ]);
-        // berita::create([
-        //     'judul'=>'Berita tentang'.Str::random(5),
-        //     'deskripsi'=>'Admin',
-        //     'kategori'=>"kegiatan",
-        //     'kategori'=>Str::random(5),
-        // ]);
+        berita::create([
+            'judul'=>'Berita tentang'.Str::random(5),
+            'deskripsi'=>'Admin',
+            'kategori'=>"kegiatan",
+            'gambar'=>"test",
+            'user'=>"admin",
+            'kategori'=>Str::random(5),
+        ]);
     }
 }

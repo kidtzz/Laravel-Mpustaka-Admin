@@ -31,7 +31,7 @@
                         <th scope="col">Nama Pinjam</th>
                         <th scope="col">Tgl. Pinjam</th>
                         <th scope="col">Tgl. Kembali</th>
-                        <th scope="col">Jumlah hari</th>
+                        <th scope="col">Sisa Hari</th>
                         <th scope="col">Action</th>
                     </tr>
                 </thead>
@@ -60,7 +60,7 @@
                         </th>
                         <th>
                             <?php 
-                            $tanggal1 = new DateTime($item["tanggal_pinjam"]);
+                            $tanggal1 = $now_date;
                             $tanggal2 = new DateTime($item["tanggal_kembali"]);
                             $interval = $tanggal1->diff($tanggal2); echo
                             $interval->format('%R%a Hari'); ?>

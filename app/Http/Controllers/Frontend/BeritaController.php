@@ -37,7 +37,6 @@ class BeritaController extends Controller
             'kategori'=> $request->kategori,
             'gambar'=> $img,
             'user'=>  Auth::user()->name,
-        
         ]); 
         return redirect('berita')-> with('message','berita added');
     }

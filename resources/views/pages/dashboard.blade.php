@@ -116,8 +116,9 @@
                     >
                         <h6>Berita Terbaru</h6>
                         <div class="list-group list-group-flush">
-                            @foreach ($list_berita as $item)
-
+                            @foreach ($list_berita as $item) @php $dateNow =
+                            Carbon\Carbon::parse($item->created_at);
+                            $resultDate= $dateNow->diffForHumans(); @endphp
                             <a
                                 href="#"
                                 class="list-group-item list-group-item-action"
@@ -131,7 +132,10 @@
                                     <small class="text-muted">{{
                                         $item["user"]
                                     }}</small>
-                                    <small class="text-muted">3 days ago</small>
+
+                                    <small class="text-muted">{{
+                                        $resultDate
+                                    }}</small>
                                 </div>
                             </a>
                             @endforeach

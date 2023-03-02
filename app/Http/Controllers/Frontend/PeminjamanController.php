@@ -4,9 +4,10 @@ namespace App\Http\Controllers\Frontend;
 
 use App\Http\Controllers\Controller;
 use App\Models\peminjaman;
-use DateTime;
+use Carbon\Carbon;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
+
 
 class PeminjamanController extends Controller
 {
@@ -18,7 +19,8 @@ class PeminjamanController extends Controller
     }
     public function viewPeminjam(){
         $list_peminjam = peminjaman::select('no_pinjam','nama_pinjam','judul_buku','tanggal_pinjam','tanggal_kembali','submit_by')->get();
-        return view('pages.transaksi.data-peminjam',compact('list_peminjam'));
+        $now_date = Carbon::now();
+        return view('pages.transaksi.data-peminjam',compact('list_peminjam','now_date'));
     }
     public function viewKembali(){
         $list_kembali = peminjaman::select('no_pinjam','nama_pinjam','judul_buku','tanggal_pinjam','tanggal_kembali')->get();

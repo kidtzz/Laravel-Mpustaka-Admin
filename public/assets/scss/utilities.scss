@@ -44,3 +44,11 @@ body {
 .box-shadow-grey {
     box-shadow: 5px 5px 15px 0px rgba(0 0 0 / 7%);
 }
+
+.nav-link-active {
+    span,
+    i {
+        color: rgb(255, 255, 255) !important;
+    }
+    background: rgb(85, 86, 165) !important;
+}

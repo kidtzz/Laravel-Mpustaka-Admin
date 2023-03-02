@@ -43,4 +43,12 @@ body {
 .box-shadow-grey {
   -webkit-box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.07);
           box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.07);
+}
+
+.nav-link-active {
+  background: rgb(85, 86, 165) !important;
+}
+.nav-link-active span,
+.nav-link-active i {
+  color: rgb(255, 255, 255) !important;
 }/*# sourceMappingURL=utilities.css.map */

@@ -59,6 +59,7 @@
                         name="tanggal_pinjam"
                         class="form-control @error('tanggal_pinjam') is-invalid @enderror"
                         value="{{ now()->format('Y-m-d') }}"
+                        readonly
                     />
                 </div>
                 <div class="mb-3">

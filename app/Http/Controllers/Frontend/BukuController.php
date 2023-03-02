@@ -14,6 +14,7 @@ class BukuController extends Controller
     //
     public function index(){
         $data = buku::select('id','kode_buku','judul','deskripsi','pengarang','penerbit','tahunTerbit','gambar','jmlhHalaman')->get(); 
+        
         return view('pages.buku.buku',['bukuItem'=>$data]);
     }
 
