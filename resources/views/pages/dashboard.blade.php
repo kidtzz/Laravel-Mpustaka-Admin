@@ -4,7 +4,7 @@
 <div class="section-dashboard">
     <div class="container-fluid border-radius-1rem">
         <div class="content py-4">
-            <h6>Profil Statistic</h6>
+            <h6>Dashboard</h6>
             <div class="row">
                 <div class="col-lg-9 mb-2">
                     <div class="row">

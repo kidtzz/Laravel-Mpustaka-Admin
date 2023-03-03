@@ -52,7 +52,6 @@ Route::get('/delete-anggota/{id}',[AnggotaController::class, 'deleteAnggota'])->
 Route::get('/getid-anggota/{id}',[AnggotaController::class, 'getAnggotaId'])->name('getid-anggota');
 Route::post('/update-anggota/{id}',[AnggotaController::class, 'updateAnggota'])->name('update-anggota');
 
-
 //berita
 Route::get('/berita',[BeritaController::class, 'index'])->name('berita');
 Route::get('/add-berita',[BeritaController::class, 'addBerita'])->name('add-berita');
@@ -65,4 +64,9 @@ Route::post('/update-berita/{id}',[BeritaController::class, 'updateBerita'])->na
 Route::get('/add-peminjaman',[PeminjamanController::class,'index'])->name('add-peminjaman');
 Route::post('/simpan-peminjaman',[PeminjamanController::class, 'addPeminjaman'])->name('simpan-peminjaman');
 Route::get('/data-peminjam',[PeminjamanController::class,'viewPeminjam'])->name('data-peminjam');
+Route::get('/delete-peminjam/{id}',[PeminjamanController::class, 'deletePeminjam'])->name('delete-peminjam');
+Route::post('/update-perpanjang/{id}',[PeminjamanController::class, 'perpanjang'])->name('update-perpanjang');
+Route::get('/getid-peminjam/{id}',[PeminjamanController::class, 'getIdpeminjam'])->name('getid-peminjam');
+Route::post('/simpan-kembaliPeminjam',[PeminjamanController::class, 'kembaliPeminjam'])->name('simpan-kembaliPeminjam');
+
 Route::get('/data-kembali',[PeminjamanController::class,'viewKembali'])->name('data-kembali');

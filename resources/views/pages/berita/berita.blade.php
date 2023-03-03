@@ -66,7 +66,7 @@
                                     type="button"
                                     class="mx-1 text-danger"
                                     data-bs-toggle="modal"
-                                    data-bs-target="#modal-delete"
+                                    data-bs-target="#modal-delete{{$item->id}}"
                                 >
                                     <span>
                                         <i class="bi bi-trash icons-center"></i
@@ -78,7 +78,7 @@
                         <div class="modal-delete">
                             <div
                                 class="modal fade"
-                                id="modal-delete"
+                                id="modal-delete{{$item->id}}"
                                 data-bs-backdrop="static"
                                 data-bs-keyboard="false"
                                 tabindex="-1"
@@ -90,7 +90,7 @@
                                         <div class="modal-header">
                                             <h1
                                                 class="modal-title fs-5"
-                                                id="modal-delete"
+                                                id="modal-delete{{$item->id}}"
                                             >
                                                 Delete Buku?
                                             </h1>

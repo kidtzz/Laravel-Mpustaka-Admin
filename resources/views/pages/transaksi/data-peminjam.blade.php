@@ -33,6 +33,7 @@
                         <th scope="col">Tgl. Kembali</th>
                         <th scope="col">Sisa Hari</th>
                         <th scope="col">Action</th>
+                        <th scope="col">Action</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -69,21 +70,237 @@
                             <div class="d-flex">
                                 <a
                                     type="button"
-                                    class="mx-1 text-success"
-                                    data-bs-toggle="tooltip"
-                                    title="view"
+                                    class="mx-1 text-warning"
+                                    data-bs-toggle="modal"
+                                    title="Berhenti"
+                                    data-bs-target="#modal-berhenti{{$item->id}}{{$item->no_pinjam}}"
                                 >
                                     <span
-                                        ><i class="bi bi-eye icons-center"></i
+                                        ><i class="bi bi-back icons-center"></i
+                                    ></span>
+                                </a>
+                                <a
+                                    type="button"
+                                    class="mx-1 text-success"
+                                    data-bs-toggle="modal"
+                                    title="Perpanjang"
+                                    data-bs-target="#modal-perpanjang{{$item->id}}"
+                                >
+                                    <span
+                                        ><i
+                                            class="bi bi-skip-forward-btn icons-center"
+                                        ></i
                                     ></span>
                                 </a>
                             </div>
                         </th>
+                        <th>
+                            <div class="d-flex">
+                                <a
+                                    type="button"
+                                    class="mx-1 text-danger"
+                                    data-bs-toggle="modal"
+                                    data-bs-target="#modal-delete-peminjam{{$item->id}}{{$item->no_pinjam}}"
+                                >
+                                    <span
+                                        ><i
+                                            class="bi bi-trash icons-center"
+                                        ></i>
+                                    </span>
+                                </a>
+                            </div>
+                        </th>
+
                         <!-- -------------------------------- -->
+                        <div class="modal-berhenti">
+                            <div
+                                class="modal fade"
+                                id="modal-berhenti{{$item->id}}{{$item->no_pinjam}}"
+                                data-bs-backdrop="static"
+                                data-bs-keyboard="false"
+                                tabindex="-1"
+                                aria-labelledby="modal-berhenti{{$item->id}}{{$item->no_pinjam}}"
+                                aria-hidden="true"
+                            >
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <form
+                                            action="{{
+                                                route('simpan-kembaliPeminjam')
+                                            }}"
+                                            method="post"
+                                            enctype="multipart/form-data"
+                                        >
+                                            @csrf
+                                            <div class="modal-header">
+                                                <h1
+                                                    class="modal-title fs-5"
+                                                    id="modal-berhenti{{$item->id}}{{$item->no_pinjam}}"
+                                                >
+                                                    Berhenti peminjam?
+                                                </h1>
+                                                <button
+                                                    type="button"
+                                                    class="btn-close"
+                                                    data-bs-dismiss="modal"
+                                                    aria-label="Close"
+                                                ></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                Apakah Anda yakin Berhenti
+                                                meminjam ini?
+                                                <input
+                                                    type="text"
+                                                    hidden
+                                                    name="no_pinjam"
+                                                    value="{{$item->no_pinjam}}"
+                                                />
+                                                <input
+                                                    type="text"
+                                                    hidden
+                                                    name="nama_pinjam"
+                                                    value="{{$item->nama_pinjam}}"
+                                                />
+                                                <input
+                                                    type="text"
+                                                    hidden
+                                                    name="judul_buku"
+                                                    value="{{$item->judul_buku}}"
+                                                />
+                                                <input
+                                                    type="text"
+                                                    hidden
+                                                    name="tanggal_kembali"
+                                                    value="{{$item->tanggal_kembali}}"
+                                                />
+                                                <input
+                                                    type="text"
+                                                    hidden
+                                                    name="tanggal_pinjam"
+                                                    value="{{$item->tanggal_pinjam}}"
+                                                />
+                                                <input
+                                                    type="text"
+                                                    hidden
+                                                    name="submit_by"
+                                                    value="{{ Auth::user()->name }}"
+                                                />
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button
+                                                    type="button"
+                                                    class="btn btn-secondary"
+                                                    data-bs-dismiss="modal"
+                                                >
+                                                    Close
+                                                </button>
+                                                <button
+                                                    type="submit"
+                                                    class="btn btn-primary"
+                                                >
+                                                    Submit
+                                                </button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-perpanjang">
+                            <div
+                                class="modal fade"
+                                id="modal-perpanjang{{$item->id}}"
+                                data-bs-backdrop="static"
+                                data-bs-keyboard="false"
+                                tabindex="-1"
+                                aria-labelledby="modal-perpanjang"
+                                aria-hidden="true"
+                            >
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <form
+                                            action="/update-perpanjang/{{$item->id}}"
+                                            method="post"
+                                            enctype="multipart/form-data"
+                                        >
+                                            @csrf
+                                            <div class="modal-header">
+                                                <h1
+                                                    class="modal-title fs-5"
+                                                    id="modal-perpanjang{{$item->id}}"
+                                                >
+                                                    Perpanjang Data peminjam
+                                                </h1>
+                                                <button
+                                                    type="button"
+                                                    class="btn-close"
+                                                    data-bs-dismiss="modal"
+                                                    aria-label="Close"
+                                                ></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <div class="mb-3">
+                                                    <label class="form-label"
+                                                        >No. Pinjam</label
+                                                    >
+                                                    <input
+                                                        type="text"
+                                                        name="no_pinjam"
+                                                        class="form-control @error('no_pinjam') is-invalid @enderror"
+                                                        value="{{$item->no_pinjam}}"
+                                                        disabled
+                                                    />
+                                                </div>
+
+                                                <div class="mb-3">
+                                                    <label class="form-label"
+                                                        >Tanggal Pinjam</label
+                                                    >
+                                                    <input
+                                                        type="date"
+                                                        name="tanggal_pinjam"
+                                                        class="form-control @error('tanggal_pinjam') is-invalid @enderror"
+                                                        value="{{$item->tanggal_pinjam}}"
+                                                        readonly
+                                                    />
+                                                </div>
+                                                <div class="mb-3">
+                                                    <label class="form-label"
+                                                        >Perpanjanag Sampai
+                                                        Tanggal</label
+                                                    >
+                                                    <input
+                                                        type="date"
+                                                        name="tanggal_kembali"
+                                                        class="form-control @error('tanggal_kembali') is-invalid @enderror"
+                                                        value="{{$item->tanggal_kembali}}"
+                                                    />
+                                                </div>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button
+                                                    type="button"
+                                                    class="btn btn-secondary"
+                                                    data-bs-dismiss="modal"
+                                                >
+                                                    Close
+                                                </button>
+                                                <button
+                                                    type="submit"
+                                                    class="btn btn-primary"
+                                                >
+                                                    Submit
+                                                </button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                         <div class="modal-delete">
                             <div
                                 class="modal fade"
-                                id="modal-delete"
+                                id="modal-delete-peminjam{{$item->id}}{{$item->no_pinjam}}"
                                 data-bs-backdrop="static"
                                 data-bs-keyboard="false"
                                 tabindex="-1"
@@ -95,7 +312,7 @@
                                         <div class="modal-header">
                                             <h1
                                                 class="modal-title fs-5"
-                                                id="modal-delete"
+                                                id="modal-delete-peminjam{{$item->id}}{{$item->no_pinjam}}"
                                             >
                                                 Delete peminjam?
                                             </h1>
@@ -108,7 +325,7 @@
                                         </div>
                                         <div class="modal-body">
                                             Apakah Anda yakin delete peminjam
-                                            ini?
+                                            ini? {{$item->no_pinjam}}
                                         </div>
                                         <div class="modal-footer">
                                             <button
@@ -120,6 +337,7 @@
                                             </button>
                                             <a
                                                 type="button"
+                                                href="/delete-peminjam/{{$item->id}}"
                                                 class="btn btn-danger"
                                             >
                                                 Yes
@@ -129,7 +347,7 @@
                                 </div>
                             </div>
                         </div>
-                        <!-- -------------------------------- -->
+                        <!---------------------------------->
                     </tr>
                     @endforeach
                 </tbody>

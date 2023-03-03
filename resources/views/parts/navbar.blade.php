@@ -1,6 +1,12 @@
 <nav class="fixed-top navbar navbar-expand-lg bg-white">
     <div class="container-fluid">
-        <a class="navbar-brand" href="{{ route('dashboard') }}">M-pustaka</a>
+        <a class="px-1" href="{{ route('dashboard') }}"
+            ><img
+                src="http://localhost:8000/storage/thumbnail/profile/logo_manggala_pustaka-removebg-preview.png"
+                alt=""
+                height="40"
+                width="40"
+        /></a>
 
         <ul class="navbar-nav" id="user-profil">
             <p class="my-2 text-size-14px text-top-5px">

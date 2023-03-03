@@ -50,6 +50,7 @@ class BukuController extends Controller
         return redirect('buku')-> with('message','buku added');
 
     }
+    
     public function getidBuku($id){
         $att_buku = buku::find($id);
         return view('pages.buku.update-buku',compact('att_buku'));

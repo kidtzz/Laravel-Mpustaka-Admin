@@ -24,8 +24,33 @@
                     </tr>
                 </thead>
                 <tbody>
-                    @php $no = 1; @endphp @foreach ($list_kembali as $item)
-                    @endforeach
+                    @php $no = 1; @endphp @foreach ($list_kembali as $item) 
+                    <tr>
+                        <th scope="row">{{ $no++ }}</th>
+                        <th>{{ $item["no_pinjam"] }}</th>
+                        <th>{{ $item["judul_buku"] }}</th>
+                        <th>{{ $item["nama_pinjam"] }}</th>
+                        <th>
+                            {{
+                                date(
+                                    "d-m-Y",
+                                    strtotime($item["tanggal_pinjam"])
+                                )
+                            }}
+                        </th>
+                        <th>
+                            {{
+                                date(
+                                    "d-m-Y",
+                                    strtotime($item["tanggal_kembali"])
+                                )
+                            }}
+                        </th>
+                        <th>{{ $item["status"] }}</th>
+                        <th>action</th>
+                    </tr>
+                        @endforeach
+                    </tr>
                 </tbody>
             </table>
         </div>

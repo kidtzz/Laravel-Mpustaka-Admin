@@ -117,7 +117,7 @@
                         href="{{ route('berita') }}"
                     >
                         <i
-                            class="bi bi-grid bi icons-center icons-size-1rem"
+                            class="bi bi-newspaper bi icons-center icons-size-1rem"
                         ></i
                         ><span class="d-none d-sm-inline text-top-5px px-2"
                             >Berita</span
