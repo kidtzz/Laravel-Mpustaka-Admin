@@ -5,6 +5,8 @@ namespace Database\Seeders;
 use App\Models\anggota;
 use App\Models\berita;
 use App\Models\buku;
+use App\Models\kembaliPinjam;
+use App\Models\peminjaman;
 use App\Models\User;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Str;
@@ -24,6 +26,7 @@ class insertDBSedeer extends Seeder
         User::create([
             'name'=>'Admin Mpustaka',
             'email'=>'admin',
+            'gambar'=>'thumbnail/profile/logo_manggala_pustaka-removebg-preview.png',
             'password'=> bcrypt('1'),
             'remember_token'=> Str::random(60),
         ]);
@@ -48,6 +51,24 @@ class insertDBSedeer extends Seeder
             'gambar'=>"test",
             'user'=>"admin",
             'kategori'=>Str::random(5),
+        ]);
+        peminjaman::create([
+            'no_pinjam'=>'PIN-'.Str::random(5),
+            'nama_pinjam'=> Str::random(5),
+            'judul_buku'=>Str::random(10),
+            'tanggal_kembali'=>Carbon::now(),
+            'tanggal_pinjam'=>Carbon::now(),
+            'submit_by'=>'Admin',
+        ]);
+
+        kembaliPinjam::create([
+            'no_kembali'=>'KEM-'.Str::random(5),
+            'nama_pinjam'=> Str::random(5),
+            'judul_buku'=>Str::random(10),
+            'tanggal_kembali'=>Carbon::now(),
+            'tanggal_pinjam'=>Carbon::now(),
+            'status'=>'InActive',
+            'submit_by'=>'Admin',
         ]);
     }
 }

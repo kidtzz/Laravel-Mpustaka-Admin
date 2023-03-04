@@ -76,4 +76,12 @@
     .nav-link[data-bs-toggle="collapse"][aria-expanded="true"]:after {
         transform: rotate(90deg);
     }
+
+    .nav-link-active {
+        span,
+        i {
+            color: rgb(255, 255, 255) !important;
+        }
+        background: rgb(85, 86, 165) !important;
+    }
 }

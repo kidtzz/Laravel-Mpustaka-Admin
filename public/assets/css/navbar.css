@@ -12,6 +12,13 @@
 #navbarNav-mobile .nav-link {
   background: white !important;
 }
+#navbarNav-mobile .nav-link-active {
+  background: rgb(85, 86, 165) !important;
+}
+#navbarNav-mobile .nav-link-active span,
+#navbarNav-mobile .nav-link-active i {
+  color: rgb(255, 249, 249) !important;
+}
 
 .navbar {
   -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.07);

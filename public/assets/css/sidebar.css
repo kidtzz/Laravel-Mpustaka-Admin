@@ -79,4 +79,11 @@
 #sidebar-desktop .nav-link[data-bs-toggle=collapse][aria-expanded=true]:after {
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg);
+}
+#sidebar-desktop .nav-link-active {
+  background: rgb(85, 86, 165) !important;
+}
+#sidebar-desktop .nav-link-active span,
+#sidebar-desktop .nav-link-active i {
+  color: rgb(255, 255, 255) !important;
 }/*# sourceMappingURL=sidebar.css.map */

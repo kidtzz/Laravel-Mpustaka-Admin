@@ -11,7 +11,9 @@
                         href="{{ route('dashboard') }}"
                     >
                         <i class="bi bi-grid bi icons-size-1rem"></i
-                        ><span class="d-none d-sm-inline px-2">Dashboard</span>
+                        ><span class="d-none d-sm-inline px-2 text-top-5px"
+                            >Dashboard</span
+                        >
                     </a>
                 </li>
 
@@ -24,7 +26,7 @@
                     >
                         <i class="fs-6 bi-clipboard2-data bi icons-center"></i>
 
-                        <span class="d-none d-sm-inline text-top-5px px-2"
+                        <span class="d-none d-sm-inline text-top-8px px-2"
                             >Master Data</span
                         >
                     </a>
@@ -66,7 +68,7 @@
                     >
                         <i class="fs-6 bi-cart-plus bi icons-center"></i>
 
-                        <span class="d-none d-sm-inline text-top-5px px-2"
+                        <span class="d-none d-sm-inline text-top-8px px-2"
                             >Transaksi</span
                         >
                     </a>
@@ -119,7 +121,7 @@
                         <i
                             class="bi bi-newspaper bi icons-center icons-size-1rem"
                         ></i
-                        ><span class="d-none d-sm-inline text-top-5px px-2"
+                        ><span class="d-none d-sm-inline text-top-8px px-2"
                             >Berita</span
                         >
                     </a>
