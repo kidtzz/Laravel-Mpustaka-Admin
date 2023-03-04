@@ -125,9 +125,7 @@
                                 <div class="modal-dialog">
                                     <div class="modal-content">
                                         <form
-                                            action="{{
-                                                route('simpan-kembaliPeminjam')
-                                            }}"
+                                            action="/simpan-kembaliPeminjam/{{$item->id}}"
                                             method="post"
                                             enctype="multipart/form-data"
                                         >
@@ -152,7 +150,7 @@
                                                 <input
                                                     type="text"
                                                     hidden
-                                                    name="no_pinjam"
+                                                    name="no_kembali"
                                                     value="{{$item->no_pinjam}}"
                                                 />
                                                 <input

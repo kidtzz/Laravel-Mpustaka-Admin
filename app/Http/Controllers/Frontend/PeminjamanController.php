@@ -23,10 +23,6 @@ class PeminjamanController extends Controller
         $now_date = Carbon::now();
         return view('pages.transaksi.data-peminjam',compact('list_peminjam','now_date'));
     }
-    public function viewKembali(){
-        $list_kembali = kembaliPinjam::select('no_pinjam','nama_pinjam','judul_buku','tanggal_pinjam','tanggal_kembali','status')->get();
-        return view('pages.transaksi.data-kembali',compact('list_kembali'));
-    }
 
     public function addPeminjaman(Request $request){
         $number = mt_rand(100, 999);
@@ -62,12 +58,17 @@ class PeminjamanController extends Controller
         return redirect('data-peminjam');
     }
 
-
-    public function kembaliPeminjam(Request $request){
+    
+    // ===============================================================================
+    public function viewKembali(){
+        $list_kembali = kembaliPinjam::select('id','no_kembali','nama_pinjam','judul_buku','tanggal_pinjam','tanggal_kembali','status')->get();
+        return view('pages.transaksi.data-kembali',compact('list_kembali'));
+    }
+    public function kembaliPeminjam(Request $request, $id){
         $number = mt_rand(100, 999);
-        $kodePinjam = 'KEM00'.$number;
+        $kodeKembali = 'KEM00'.$number;
         DB::table('kembali_pinjam')->insert([
-            'no_pinjam'=>$kodePinjam,
+            'no_kembali'=>$kodeKembali,
             'nama_pinjam'=>$request->nama_pinjam,
             'judul_buku'=>$request->judul_buku,
             'tanggal_pinjam'=>$request->tanggal_pinjam,
@@ -75,7 +76,17 @@ class PeminjamanController extends Controller
             'submit_by'=>$request->submit_by,
             'status'=>'InActive',
         ]);
+        $data = peminjaman::find($id);
+        $data->delete();
         toastr()->success('Peminjaman Berhenti');
         return redirect('data-peminjam');
     }
+    public function deleteKembaliPeminjam($id){
+        $data = kembaliPinjam::find($id);
+        $data->delete();
+        toastr()->error('Peminjam Berhasil Didelete');
+        return redirect('data-kembali');
+    }
+
+   
 }

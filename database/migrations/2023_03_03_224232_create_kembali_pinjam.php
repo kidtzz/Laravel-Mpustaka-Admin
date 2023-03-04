@@ -16,7 +16,7 @@ class CreateKembaliPinjam extends Migration
     {
         Schema::create('kembali_pinjam', function (Blueprint $table) {
             $table->id();
-            $table->string('no_pinjam');
+            $table->string('no_kembali');
             $table->string('nama_pinjam')->nullable();
             $table->string('judul_buku')->nullable();
             $table->date('tanggal_pinjam'); 
