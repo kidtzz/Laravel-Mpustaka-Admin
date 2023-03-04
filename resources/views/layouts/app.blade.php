@@ -10,7 +10,7 @@
         <link
             rel="shortcut icon"
             type="image/x-icon"
-            href="{{ asset('images/logo_manggala_pustaka_white.ico') }}"
+            href="http://localhost:8000/storage/thumbnail/icons/logo_manggala_pustaka_white.png"
         />
 
         <title>M-Pustaka</title>
