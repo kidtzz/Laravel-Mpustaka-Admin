@@ -61,7 +61,7 @@ class PeminjamanController extends Controller
     
     // ===============================================================================
     public function viewKembali(){
-        $list_kembali = kembaliPinjam::select('id','no_kembali','nama_pinjam','judul_buku','tanggal_pinjam','tanggal_kembali','status')->get();
+        $list_kembali = kembaliPinjam::select('id','no_kembali','nama_pinjam','judul_buku','tanggal_pinjam','tanggal_kembali','status','created_at')->get();
         return view('pages.transaksi.data-kembali',compact('list_kembali'));
     }
     public function kembaliPeminjam(Request $request, $id){
