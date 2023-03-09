@@ -1,5 +1,6 @@
 <?php
 
+
 use App\Http\Controllers\Frontend\AnggotaController;
 use App\Http\Controllers\Frontend\BeritaController;
 use App\Http\Controllers\Frontend\BukuController;
@@ -71,4 +72,5 @@ Route::get('/getid-peminjam/{id}',[PeminjamanController::class, 'getIdpeminjam']
 Route::get('/data-kembali',[PeminjamanController::class,'viewKembali'])->name('data-kembali');
 Route::post('/simpan-kembaliPeminjam/{id}',[PeminjamanController::class, 'kembaliPeminjam'])->name('simpan-kembaliPeminjam');
 Route::get('/delete-kembaliPeminjam/{id}',[PeminjamanController::class, 'deleteKembaliPeminjam'])->name('delete-kembaliPeminjam');
+
 
